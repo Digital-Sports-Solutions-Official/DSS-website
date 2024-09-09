@@ -5,7 +5,7 @@ import './Landing.css'
 const Landing = ({ }) => {
     return (
         <div className="Landing">
-            <div className='row' style={{ margin: '1rem' }}>
+            <div className='row' style={{ alignItems: 'start' }}>
                 <div className="column slogan-holder">Hardware <br /> Software <br /> Sports</div>
                 <div className="column">
                     <img src='https://computercare.net/wp-content/uploads/2019/08/Blog-Post-Header.png' />
