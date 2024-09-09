@@ -1,16 +1,17 @@
 /* Noah Klein */
 
-import NavBar from './NavBar';
-import AboutUs from './Sections/AboutUs';
-import Footer from './Sections/Footer';
-
 import './Home.css';
+import NavBar from '../NavBar';
+import Footer from '../../components/Footer';
+import Landing from './Landing';
+import Partners from './Partners';
 
 const Home = () => {
     return (
         <div className="Home">
             <NavBar />
-            <AboutUs />
+            <Landing />
+            <Partners />
             <Footer />
         </div>
     );

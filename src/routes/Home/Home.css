@@ -1,7 +1,6 @@
 /* Noah Klein */
 
-@import './themes.css';
-@import './Sections/Section.css';
+@import '../themes.css';
 
 .Home {
     background-color: var(--dss-white);
@@ -12,5 +11,10 @@
     align-items: center;
 
     font-family: Arial;
-    color: var(black);
+    color: var(--dss-gray);
+}
+
+.Home h1 {
+    text-align: center;
+    font-size: 5rem;
 }

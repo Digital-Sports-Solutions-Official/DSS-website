@@ -1,0 +1,14 @@
+/* Noah Klein */
+
+
+
+.Partners .slogan-holder {
+    flex-grow: 0;
+    line-height: 10rem;
+    font-size: 8rem;
+    align-items: end;
+}
+
+.Partners img {
+    height: 10rem;
+}

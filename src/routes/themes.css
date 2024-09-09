@@ -1,0 +1,20 @@
+/* Noah Klein */
+
+:root {
+    --dss-gray: #424150;
+    --dss-red: #FF2558;
+    --dss-white: #E7E8E8;
+}
+
+:root .column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+:root .row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}

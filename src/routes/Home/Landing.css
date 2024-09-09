@@ -1,0 +1,15 @@
+/* Noah Klein */
+
+.Landing .slogan-holder {
+    flex-grow: 0;
+    line-height: 10rem;
+    font-size: 8rem;
+    align-items: end;
+}
+
+.Landing img {
+    height: 20rem;
+    width: 100%;
+    object-fit: contain;
+    background-color: var(--dss-gray);
+}
