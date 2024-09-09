@@ -1,0 +1,35 @@
+/* Noah Klein */
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dss-white);
+    background-color: var(--dss-gray);
+
+    height: fit-content;
+
+    z-index: 15;
+
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 35px;
+
+
+    margin-top: 150px;
+}
+
+.Footer a {
+    color: var(--dss-red);
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+.Footer a:hover,
+.Footer a:focus {
+    color: var(--dss-white);
+    text-decoration: underline;
+    /* Add underline on hover/focus */
+}

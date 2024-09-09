@@ -1,0 +1,32 @@
+/* Noah Klein */
+
+.NavBar {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+
+    background-color: var(--dss-gray);
+    color: var(--dss-white);
+
+    padding: 0 clamp(0px, 5vw, 75px);
+    /* Ensure padding is included in total width */
+    box-sizing: border-box;
+
+    z-index: 20;
+}
+
+.NavBar a {
+    padding: 17px clamp(5px, 2vw, 15px);
+    color: var(--dss-white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.NavBar a:hover {
+    color: white;
+}

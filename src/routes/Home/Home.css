@@ -1,0 +1,16 @@
+/* Noah Klein */
+
+@import './themes.css';
+@import './Sections/Section.css';
+
+.Home {
+    background-color: var(--dss-white);
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Arial;
+    color: var(black);
+}
