@@ -4,14 +4,13 @@
 
 .carousel-container {
     width: 60rem;
-    height: 60rem;
     margin: auto;
     text-align: center;
 }
 
 .carousel {
     position: relative;
-    height: 350px;
+    height: 30rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +20,7 @@
 
 .product {
     position: absolute;
-    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out, opacity 0.5s ease-in-out;
     cursor: pointer;
 }
 
@@ -32,6 +31,7 @@
     border-radius: 15px;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    perspective: 1000px;
 }
 
 .product-name {
@@ -41,7 +41,7 @@
 }
 
 .product-description {
-    transition: opacity 0.5s ease;
+    transition: opacity 0.8s ease;
     opacity: 1;
 }
 

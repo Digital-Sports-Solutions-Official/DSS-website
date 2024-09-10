@@ -25,6 +25,7 @@ const vite: Product = {
 }
 
 
+// ! Products should always contain at least 5 objects, repeats are fine if required.
 const products: Array<Product> = [clkr, ndaLogo, clkr, ndaLogo, vite]
 
 export default products;

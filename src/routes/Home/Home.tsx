@@ -6,7 +6,6 @@ import Footer from '../../components/Footer';
 import Landing from './Landing';
 import Partners from './Partners';
 import ProductCarousel from './ProductCarousel';
-
 const Home = () => {
     return (
         <div className="Home">
