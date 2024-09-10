@@ -1,14 +1,13 @@
 /* Noah Klein */
 
 .RequestQuote {
-    width: 50rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     padding-bottom: 1.25rem;
 }
 
 .RequestQuote h2 {
-    margin: 1.25rem 1rem;
-    text-align: left;
+    margin: 1.5rem 1rem;
+    text-align: center;
+    font-size: 1.75rem;
 }
 
 .RequestQuote p {
@@ -18,7 +17,7 @@
 }
 
 .RequestQuote .quote-form {
-    width: 80%;
+    width: 50rem;
     margin: 0 auto;
     padding: 1.25rem;
     background-color: #f9f9f9;

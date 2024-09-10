@@ -1,14 +1,13 @@
 /* Noah Klein */
 
-import { CSSProperties } from 'react';
 import './RequestQuote.css'
 
 const RequestQuote = ({ }) => {
 
     return (
         <div className='RequestQuote'>
-            <h2>Request a quote</h2>
-            <p>Fill out the form below and we will reply with a solution for your needs.</p>
+            <h2>Wondering if we can meet the needs of your league? Contact us!</h2>
+            
 
             {/* TODO This is a really good short term solution but something better should be done eventually */}
             <form action="https://formsubmit.co/769eea541dd66c08f65d7c9ff1b01712" method="POST" className="quote-form">
@@ -21,7 +20,7 @@ const RequestQuote = ({ }) => {
                     <input type="email" name="email" required className="input-field" />
                 </div>
                 <div className="input-group">
-                    <label htmlFor="request">Quote Request</label>
+                    <label htmlFor="request">Your needs</label>
                     <textarea name="request" required rows={5} />
                 </div>
                 <button type="submit" className="submit-button">Send</button>

@@ -15,14 +15,15 @@ body {
   flex-direction: column;
   align-items: center;
 
-  font-family: arial;
+  font-family: montserrat;
 
   color: var(--dss-gray);
   background-color: var(--dss-white);
 }
 
 textarea {
-  font-family: arial;
+  font-family: montserrat;
+  resize: vertical; 
 }
 
 #error-page {
