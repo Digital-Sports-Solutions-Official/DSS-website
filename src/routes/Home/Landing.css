@@ -1,11 +1,59 @@
 /* Noah Klein */
 
 .Landing .slogan-holder {
+    display: flex;
+    flex-direction: column;
     flex-grow: 0;
     font-weight: 650;
     line-height: 10rem;
     font-size: 8rem;
-    align-items: end;
+    align-items: start;
+}
+
+.Landing .slogan-holder div {
+    width: 100%;
+}
+
+/* Apply different animation delays */
+.Landing .slogan-holder div:nth-child(1) {
+    background: linear-gradient(to right, var(--dss-gray) 0%, var(--dss-gray) 15%, #949494 50%, var(--dss-gray) 75%, var(--dss-gray) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    animation: shine 5s infinite linear;
+}
+
+.Landing .slogan-holder div:nth-child(2) {
+    background: linear-gradient(to right, var(--dss-gray) 0%, var(--dss-gray) 15%, #949494 50%, var(--dss-gray) 75%, var(--dss-gray) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: -50% 0%;
+    animation: shine 5s infinite linear;
+    animation-delay: 3s;
+}
+
+.Landing .slogan-holder div:nth-child(3) {
+    background: linear-gradient(to right, var(--dss-gray) 0%, var(--dss-gray) 15%, #949494 50%, var(--dss-gray) 75%, var(--dss-gray) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: -50% 0%;
+    animation: shine 5s infinite linear;
+    animation-delay: 6.5s;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 150% 0%;
+    }
+
+    100% {
+        background-position: -50% 0%;
+    }
 }
 
 .Landing img {

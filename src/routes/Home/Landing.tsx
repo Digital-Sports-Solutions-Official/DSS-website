@@ -7,7 +7,11 @@ const Landing = ({ }) => {
         <div className="Landing">
             <div className='row' style={{ alignItems: 'start' }}>
                 {/* TODO add sheen to hardware software sports */}
-                <div className="column slogan-holder">Hardware <br /> Software <br /> Sports</div>
+                <div className="column slogan-holder">
+                    <div>Hardware</div>
+                    <div>Software</div>
+                    <div>Sports</div>
+                </div>
                 <div className="column">
                     <img src='https://computercare.net/wp-content/uploads/2019/08/Blog-Post-Header.png' />
                     <p>

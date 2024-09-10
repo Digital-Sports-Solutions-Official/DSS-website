@@ -5,6 +5,7 @@
 - All color themes
 - All text to be displayed
 - Alt text for all provided images
+- Keep this in mind https://www.bygrantkilgard.com/work/dm-4
 
 
 ## Notes
