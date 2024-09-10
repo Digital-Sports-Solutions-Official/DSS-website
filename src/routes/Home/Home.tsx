@@ -6,6 +6,8 @@ import Footer from '../../components/Footer';
 import Landing from './Landing';
 import Partners from './Partners';
 import ProductCarousel from './ProductCarousel';
+import ContactButton from '../../components/ContactButton';
+
 const Home = () => {
     return (
         <div className="Home">
@@ -13,6 +15,8 @@ const Home = () => {
             <Landing />
             <Partners />
             <ProductCarousel />
+            {/* //TODO I don't even think this should be a button */}
+            <ContactButton href="apple.com" />
             <Footer />
         </div>
     );
