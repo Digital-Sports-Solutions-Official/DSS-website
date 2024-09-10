@@ -25,7 +25,12 @@ const Partners = ({ }) => {
             <div className='column'>
                 {Array.from(partnerArray.entries()).map(([key, partner]) => (
                     <div className='row' style={{ flexDirection: (isEven(key) ? 'row' : 'row-reverse') }}>
-                        <img src={partner.logoUrl} />
+
+                        <div className='column'>
+                            <img src={partner.logoUrl} />
+                            {/* <h3>{partner.name}</h3> */}
+                        </div>
+
                         <p>{partner.description}</p>
                     </div>
                 ))}

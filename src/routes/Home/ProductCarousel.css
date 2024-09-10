@@ -1,0 +1,65 @@
+/* Noah Klein */
+
+
+.ProductCarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    /* Full screen height */
+    display: flex;
+    align-items: center;
+}
+
+.ProductCarousel .track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.ProductCarousel .item {
+    min-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.ProductCarousel img {
+    width: 30%;
+    object-fit: cover;
+}
+
+.ProductCarousel .control {
+    position: absolute;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    height: fit-content;
+
+    background-color: transparent;
+    color: rgba(255, 0, 0, 0.6);
+
+    border: none;
+
+    font-size: 3rem;
+    line-height: 3rem;
+    cursor: pointer;
+    z-index: 13;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.ProductCarousel .control:hover {
+    transform: scale(125%);
+}
+
+.ProductCarousel .control.prev {
+    left: 10px;
+}
+
+.ProductCarousel .control.next {
+    right: 10px;
+}

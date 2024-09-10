@@ -4,3 +4,7 @@
 - Font family
 - All color themes
 - All text to be displayed
+
+
+## Notes
+- 
