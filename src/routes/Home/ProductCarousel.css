@@ -1,0 +1,81 @@
+/* Noah Klein */
+
+/* TODO add slight tilt to left and right carousel items */
+
+.carousel-container {
+    width: 60rem;
+    height: 60rem;
+    margin: auto;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 2rem;
+}
+
+.product {
+    position: absolute;
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+.product-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.product-description {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.product-title {
+    font-size: 2rem;
+    color: #333;
+}
+
+.product-blurb {
+    font-size: 1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.product-description {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-description {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

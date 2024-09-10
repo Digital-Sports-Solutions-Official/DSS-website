@@ -23,3 +23,9 @@
     align-content: center;
     margin: 1rem;
 }
+
+
+.Home h1 {
+    text-align: center;
+    font-size: 5rem;
+}
