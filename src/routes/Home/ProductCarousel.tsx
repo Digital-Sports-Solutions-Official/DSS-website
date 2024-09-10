@@ -6,18 +6,18 @@ import products from "../../products";
 
 import './ProductCarousel.css'
 
-interface Product {
-    name: string;
-    imageUrl: string;
-    description: string;
-}
-
 const ProductCarousel: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToProduct = (index: number) => {
         setCurrentIndex(index);
     };
+
+
+    const getProductOffset = (index: number): number => {
+        const totalProducts = products.length;
+        return (index - currentIndex + totalProducts) % totalProducts;
+    }
 
     const getProductPosition = (index: number) => {
         const totalProducts = products.length;
@@ -27,13 +27,13 @@ const ProductCarousel: React.FC = () => {
             case 0: // Center product
                 return { transform: 'translateX(0) scale(1.15)', zIndex: 2, opacity: 1 };
             case 1: // Right product
-                return { transform: 'translateX(300px) scale(0.8)', zIndex: 1, opacity: 0.9 };
+                return { transform: 'translateX(25rem) scale(0.8)', zIndex: 1, opacity: 0.9 };
             case 2: // Right product
-                return { transform: 'translateX(600px) scale(0)', zIndex: 1, opacity: 0 };
+                return { transform: 'translateX(37.5rem) scale(0)', zIndex: 1, opacity: 0 };
             case totalProducts - 2: // Left out of frame (circular)
-                return { transform: 'translateX(-600px) scale(0)', zIndex: 1, opacity: 0 };
+                return { transform: 'translateX(-37.5rem) scale(0)', zIndex: 1, opacity: 0 };
             case totalProducts - 1: // Left product (circular)
-                return { transform: 'translateX(-300px) scale(0.8)', zIndex: 1, opacity: 0.9 };
+                return { transform: 'translateX(-25rem) scale(0.8)', zIndex: 1, opacity: 0.9 };
             default: // Teleport the farthest products to the sides
                 return { transform: 'translateX(1000px) scale(0.4)', opacity: 0 };
         }
@@ -76,7 +76,7 @@ const ProductCarousel: React.FC = () => {
                 {products.map((product, index) => (
                     <div
                         key={index}
-                        className="product"
+                        className={`product ${getProductOffset(index) === 0 ? 'center' : ''}`}
                         style={getProductPosition(index)}
                         onClick={() => goToProduct(index)}
                     >
@@ -84,11 +84,10 @@ const ProductCarousel: React.FC = () => {
                             <img
                                 src={product.imageUrl}
                                 alt={product.name}
-                                className="product-image"
                             />
                         </Tilt>
 
-                        <p className="product-name">{product.name}</p>
+                        <p className="name">{product.name}</p>
                         <p className="description">{product.description}</p>
                     </div>
                 ))}

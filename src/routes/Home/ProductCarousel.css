@@ -3,79 +3,54 @@
 /* TODO add slight tilt to left and right carousel items */
 
 .carousel-container {
-    width: 60rem;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
 
 .carousel {
     position: relative;
-    height: 30rem;
+    height: 50rem;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    padding-top: 2rem;
 }
 
-.product {
+.carousel .product {
+    top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     transition: transform 0.8s ease-in-out, opacity 0.5s ease-in-out;
     cursor: pointer;
+    justify-content: flex-start;
 }
 
-.product-image {
-    width: 250px;
-    height: 250px;
+.carousel .product img {
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
     border-radius: 15px;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    perspective: 1000px;
 }
 
-.product-name {
-    margin-top: 10px;
-    font-size: 1.2rem;
+.carousel .product .name {
+    margin-top: 0.7rem;
+    margin-bottom: 0rem;
+    font-size: 1.5rem;
     color: #555;
 }
 
-.product-description {
-    transition: opacity 0.8s ease;
+.carousel .product .description {
+    transition: opacity 0.8s ease-in-out;
+    opacity: 0;
+    width: 30rem;
+    flex-grow: 1;
+}
+
+.carousel .center .description {
     opacity: 1;
-}
-
-.product-title {
-    font-size: 2rem;
-    color: #333;
-}
-
-.product-blurb {
-    font-size: 1rem;
-    color: #666;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-.product-description {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.product-description {
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
 }
