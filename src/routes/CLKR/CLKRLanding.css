@@ -2,6 +2,7 @@
 
 
 .CLKRLanding .row {
+    max-width: 70rem;
     padding: 0 10rem;
     gap: 2rem;
 }

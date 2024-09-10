@@ -2,6 +2,7 @@
 
 .Landing .slogan-holder {
     flex-grow: 0;
+    font-weight: 650;
     line-height: 10rem;
     font-size: 8rem;
     align-items: end;
@@ -12,4 +13,8 @@
     width: 100%;
     object-fit: contain;
     background-color: var(--dss-gray);
+}
+
+.Landing p {
+    font-size: large;
 }

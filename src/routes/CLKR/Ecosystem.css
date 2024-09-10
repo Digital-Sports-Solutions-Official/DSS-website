@@ -27,3 +27,7 @@
 .Ecosystem h3 {
     margin: 0;
 }
+
+.Ecosystem > .column{
+    padding: 0 2.5rem;
+}
