@@ -13,3 +13,7 @@
 
 ## Changes needed for
 - ContactButton in Home does not look good, i like the call to action but Im not sure about a button like that
+
+
+## Good idea for quote submission
+Have a quote submitter slide out from the right so that the user can go back and look at stuff

@@ -21,6 +21,10 @@ body {
   background-color: var(--dss-white);
 }
 
+textarea {
+  font-family: arial;
+}
+
 #error-page {
   margin: 0;
   position: absolute;

@@ -37,6 +37,8 @@ const AlternatingMediaText = ({ entries }: AlternatingMediaTextProps) => {
                             <img src={entry.imgURL} />
                         )}
 
+                        {/* TODO make title a label */}
+
                         <div className='title' style={getTitlePosition(index)}>
                             <h3>{entry.title}</h3>
                         </div>
