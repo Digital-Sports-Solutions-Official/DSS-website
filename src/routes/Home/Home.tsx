@@ -1,12 +1,11 @@
 /* Noah Klein */
 
-import './Home.css';
-import NavBar from '../NavBar';
-import Footer from '../../components/Footer';
+import NavBar from '../../common_components/NavBar';
+import Footer from '../../common_components/Footer';
 import Landing from './Landing';
 import Partners from './Partners';
 import ProductCarousel from './ProductCarousel';
-import ContactButton from '../../components/ContactButton';
+import ContactButton from '../../common_components/ContactButton';
 
 const Home = () => {
     return (

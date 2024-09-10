@@ -23,7 +23,7 @@ const textStyle: CSSProperties = {
 const ContactButton = ({ href }: ContactButtonProps) => {
     return (
         <a href={href} style={anchorStyle}>
-            <h2 style={textStyle}>Join the Court Sport revolution!</h2>
+            <h2 style={textStyle}>(this needs changed lol) Join the Court Sport revolution!</h2>
         </a>
     );
 }

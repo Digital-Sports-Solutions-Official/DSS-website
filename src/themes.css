@@ -1,5 +1,16 @@
 /* Noah Klein */
 
+.Home,
+.CLKR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#root {
+    width: 100%;
+}
+
 :root {
     --dss-gray: #424150;
     --dss-red: #FF2558;

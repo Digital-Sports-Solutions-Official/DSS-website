@@ -1,5 +1,7 @@
 /* Noah Klein */
 
+@import './themes.css';
+
 body {
   position: absolute;
   -webkit-font-smoothing: antialiased;
@@ -8,7 +10,15 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-family: arial;
+
+  color: var(--dss-gray);
+  background-color: var(--dss-white);
 }
 
 #error-page {
@@ -24,10 +34,4 @@ body {
   justify-content: center;
   width: 100%;
   color: white;
-}
-
-@font-face {
-  font-family: 'buckeye-sans';
-  src: local("BuckeyeSans2-Black"),
-    url('$fonts/BuckeyeSans2-Black.woff2') format('woff2');
 }

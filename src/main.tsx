@@ -8,6 +8,9 @@ import ErrorPage from "./ErrorPage";
 
 import './index.css';
 import Home from './routes/Home/Home';
+import CLKR from './routes/CLKR/CLKR';
+import Order from './routes/Order/Order';
+import About from './routes/About/About';
 
 
 const router = createBrowserRouter([
@@ -18,17 +21,17 @@ const router = createBrowserRouter([
   },
   {
     path: "/clkr",
-    element: <Home />,
+    element: <CLKR />,
     errorElement: <ErrorPage />,
   },
   {
     path: "/order",
-    element: <Home />,
+    element: <Order />,
     errorElement: <ErrorPage />,
   },
   {
     path: "/about",
-    element: <Home />,
+    element: <About />,
     errorElement: <ErrorPage />,
   },
 ]);
