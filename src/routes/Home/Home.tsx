@@ -15,7 +15,7 @@ const Home = () => {
             <Partners />
             <ProductCarousel />
             {/* //TODO I don't even think this should be a button */}
-            <ContactButton href="apple.com" />
+            <ContactButton href="/contact" />
             <Footer />
         </div>
     );

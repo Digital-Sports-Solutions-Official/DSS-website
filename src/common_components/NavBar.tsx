@@ -9,7 +9,7 @@ interface NavBarProps {
 
 const navBarMap: Map<string, string> = new Map([
     ['Home', ' /'],
-    ['CLKR', 'clkr'],
+    ['Clkr', 'clkr'],
     ['Order', 'order'],
     ['About', 'about'],
 ]);
