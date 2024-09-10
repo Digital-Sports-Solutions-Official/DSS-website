@@ -1,1 +1,29 @@
 /* Noah Klein */
+
+/* ! This should usually be in line with Partners.css */
+
+.Ecosystem img {
+    max-height: 10rem;
+    max-width: 20rem;
+}
+
+.Ecosystem {
+    margin-bottom: 4rem;
+}
+
+.Ecosystem .entry {
+    align-items: flex-start;
+    text-wrap: pretty;
+}
+
+.Ecosystem .title {
+    width: 15rem;
+}
+
+.Ecosystem p {
+    padding: 0.5rem;
+}
+
+.Ecosystem h3 {
+    margin: 0;
+}

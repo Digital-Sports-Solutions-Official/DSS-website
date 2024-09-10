@@ -4,7 +4,7 @@
     margin-bottom: 4rem;
 }
 
-.Partners .partner {
+.Partners .entry {
     align-items: flex-start;
     text-wrap: pretty;
 }
@@ -14,7 +14,8 @@
 }
 
 .Partners img {
-    height: 10rem;
+    max-height: 10rem;
+    max-width: 20rem;
 }
 
 .Partners p {
