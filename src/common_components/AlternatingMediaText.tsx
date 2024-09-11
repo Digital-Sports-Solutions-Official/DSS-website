@@ -18,33 +18,36 @@ const AlternatingMediaText = ({ entries }: AlternatingMediaTextProps) => {
         return (x % 2) === 0;
     }
 
-    const getTitlePosition = (x: number): CSSProperties => {
-        return isEven(x) ? { position: 'absolute', top: '100%', left: 0 } : { position: 'absolute', top: '100%', right: 0, textAlign: 'end' }
 
+    const getTitlePosition = (x: number): CSSProperties => {
+        return isEven(x) ? {} : { marginLeft: 'auto', textAlign: 'end' };
     }
 
     return (
         <div className='column'>
             {Array.from(entries.entries()).map(([index, entry]) => (
-                <div className='row entry' style={{ flexDirection: (isEven(index) ? 'row' : 'row-reverse') }}>
+                <div className="entry">
+                    <div className='row' style={{ flexDirection: (isEven(index) ? 'row' : 'row-reverse') }}>
 
-                    <div className='column' style={{ position: 'relative' }}>
-                        {entry.href ? (
-                            <a href={entry.href} target='_blank'>
+                        <div className='column'>
+                            {entry.href ? (
+                                <a href={entry.href} target='_blank'>
+                                    <img src={entry.imgURL} />
+                                </a>
+                            ) : (
                                 <img src={entry.imgURL} />
-                            </a>
-                        ) : (
-                            <img src={entry.imgURL} />
-                        )}
+                            )}
 
-                        {/* TODO make title a label */}
+                            {/* TODO make title a label */}
 
-                        <div className='title' style={getTitlePosition(index)}>
-                            <h3>{entry.title}</h3>
+
                         </div>
-                    </div>
 
-                    <p>{entry.description}</p>
+                        <p>{entry.description}</p>
+                    </div>
+                    <div className='title' style={getTitlePosition(index)}>
+                        <h3>{entry.title}</h3>
+                    </div>
                 </div>
             ))}
         </div>
