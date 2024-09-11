@@ -69,6 +69,9 @@ const ProductCarousel: React.FC = () => {
     }
 
 
+    // Make autoscroll or some way to indicate to users that this thing moves
+
+
     return (
         <div className="carousel-container">
             <h1>Products</h1>

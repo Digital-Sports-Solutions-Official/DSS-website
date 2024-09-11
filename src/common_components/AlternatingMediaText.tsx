@@ -2,6 +2,8 @@
 
 import { CSSProperties } from "react";
 
+import './AlternatingMediaText.css'
+
 export interface MediaTextEntry {
     title: string;
     href?: string;
@@ -24,7 +26,7 @@ const AlternatingMediaText = ({ entries }: AlternatingMediaTextProps) => {
     }
 
     return (
-        <div className='column'>
+        <div className='AlternatingMediaText column'>
             {Array.from(entries.entries()).map(([index, entry]) => (
                 <div className="entry">
                     <div className='row' style={{ flexDirection: (isEven(index) ? 'row' : 'row-reverse') }}>

@@ -1,0 +1,41 @@
+/* Noah Klein */
+
+.AlternatingMediaText {
+    margin-bottom: 10rem;
+    padding: 0 5rem;
+}
+
+.AlternatingMediaText .title {
+    max-width: 10rem;
+}
+
+.AlternatingMediaText h3 {
+    margin: 0.5rem 0 0 0;
+}
+
+.AlternatingMediaText .column {
+    margin: 0;
+}
+
+.AlternatingMediaText .entry {
+    padding: 2rem;
+    text-wrap: pretty;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.AlternatingMediaText .entry .row {
+    margin: 0;
+    gap: 1rem;
+}
+
+.AlternatingMediaText .entry:hover {
+    transform: scale(102%);
+}
+
+.AlternatingMediaText img {
+    max-height: 10rem;
+    max-width: 20rem;
+}
