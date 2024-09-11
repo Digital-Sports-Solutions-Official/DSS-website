@@ -11,8 +11,9 @@ const Landing = ({ }) => {
                     <div>Hardware</div>
                     <div>Software</div>
                     <div>Sports</div>
+                    <p>Digital Sports Solutions LLC.</p>
                 </div>
-                <div className="column">
+                <div className="column right">
                     <img src='https://computercare.net/wp-content/uploads/2019/08/Blog-Post-Header.png' />
                     <p>
                         Lorem ipsum odor amet, consectetuer adipiscing elit. Duis nisi netus aptent augue facilisis sociosqu himenaeos turpis. Habitasse convallis ipsum morbi metus massa cursus. Ataciti scelerisque sapien pretium scelerisque erat fermentum congue. Montes curabitur commodo at orci morbi. Posuere adipiscing dui vestibulum; per cras augue arcu?
