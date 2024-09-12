@@ -16,10 +16,12 @@ const Landing = ({ }) => {
                 <div className="column image-paragraph">
                     <img src='https://computercare.net/wp-content/uploads/2019/08/Blog-Post-Header.png' />
                     <p>
-                        Lorem ipsum odor amet, consectetuer adipiscing elit. Duis nisi netus aptent augue facilisis sociosqu himenaeos turpis. Habitasse convallis ipsum morbi metus massa cursus. Ataciti scelerisque sapien pretium scelerisque erat fermentum congue. Montes curabitur commodo at orci morbi. Posuere adipiscing dui vestibulum; per cras augue arcu?
+                        Digital Sports Solutions is revolutionizing recreational sports leagues with its integrated suite of hardware,
+                        user-friendly software, and adaptable database system.
                     </p>
                     <p>
-                        Mi aliquam ipsum aliquet neque class faucibus ligula. Hac interdum eget tristique blandit nunc aliquet in phasellus. Class ornare nullam congue metus praesent cubilia ridiculus rutrum. Quis porttitor facilisi habitasse adipiscing eu aliquam. Magna enim parturient sit arcu dictum magna feugiat mollis orci? Blandit potenti posuere vehicula; vestibulum habitant penatibus scelerisque. Sollicitudin turpis dictum odio efficitur blandit. Donec inceptos risus sodales sagittis sollicitudin per.
+                        Our tinyLeague ecosystem streamlines league management,
+                        improves stat tracking, and simplifies data storage, enhancing the experience for players, spectators, and administrators.
                     </p>
                 </div>
             </div>

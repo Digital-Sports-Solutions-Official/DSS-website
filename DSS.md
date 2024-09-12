@@ -18,3 +18,7 @@
 
 ## Good idea for quote submission
 Have a quote submitter slide out from the right so that the user can go back and look at stuff
+
+
+## Mobile specifications
+Built to be functional and reactive for devices with a screen-width of at least 800 pixels

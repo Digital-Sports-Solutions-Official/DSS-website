@@ -12,8 +12,8 @@ const Home = () => {
         <div className="Home">
             <NavBar />
             <Landing />
-            <Partners />
             <ProductCarousel />
+            <Partners />
             {/* //TODO I don't even think this should be a button */}
             <ContactButton href="/contact" />
             <Footer />

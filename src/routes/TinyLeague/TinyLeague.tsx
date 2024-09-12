@@ -2,15 +2,15 @@
 
 import NavBar from '../../common_components/NavBar';
 import Footer from '../../common_components/Footer';
-import CLKRLanding from './CLKRLanding';
+import TinyLeagueLanding from './TinyLeagueLanding';
 import Ecosystem from './Ecosystem';
 import RequestQuote from './RequestQuote';
 
-const CLKR = () => {
+const TinyLeague = () => {
     return (
-        <div className="CLKR">
+        <div className="tinyLeague">
             <NavBar />
-            <CLKRLanding />
+            <TinyLeagueLanding />
             <Ecosystem />
             <RequestQuote />
             <Footer />
@@ -18,4 +18,4 @@ const CLKR = () => {
     );
 };
 
-export default CLKR;
+export default TinyLeague;

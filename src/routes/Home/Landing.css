@@ -87,5 +87,7 @@
 }
 
 .Landing p {
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 450;
 }

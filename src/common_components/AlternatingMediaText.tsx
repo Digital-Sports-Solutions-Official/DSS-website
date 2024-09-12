@@ -28,29 +28,16 @@ const AlternatingMediaText = ({ entries }: AlternatingMediaTextProps) => {
     return (
         <div className='AlternatingMediaText column'>
             {Array.from(entries.entries()).map(([index, entry]) => (
-                <div className="entry">
+                <a className="entry" href={entry.href} target='_blank'>
                     <div className='row' style={{ flexDirection: (isEven(index) ? 'row' : 'row-reverse') }}>
-
-                        <div className='column'>
-                            {entry.href ? (
-                                <a href={entry.href} target='_blank'>
-                                    <img src={entry.imgURL} />
-                                </a>
-                            ) : (
-                                <img src={entry.imgURL} />
-                            )}
-
-                            {/* TODO make title a label */}
-
-
-                        </div>
-
+                        <img src={entry.imgURL} />
                         <p>{entry.description}</p>
                     </div>
                     <div className='title' style={getTitlePosition(index)}>
+                        {/* TODO make title a label */}
                         <h3>{entry.title}</h3>
                     </div>
-                </div>
+                </a>
             ))}
         </div>
     )

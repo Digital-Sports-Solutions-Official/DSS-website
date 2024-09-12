@@ -1,35 +1,101 @@
-/* Noah Klein */
-
+/* General footer styles */
 .Footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--dss-white);
     background-color: var(--dss-gray);
-
-    height: fit-content;
-
-    z-index: 15;
-
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 35px;
-
-
-    margin-top: 150px;
-}
-
-.Footer a {
-    color: var(--dss-red);
-    text-decoration: none;
-    /* Remove underline */
-    transition: color 0.3s ease;
-    /* Smooth color transition */
-}
-
-.Footer a:hover,
-.Footer a:focus {
     color: var(--dss-white);
-    text-decoration: underline;
-    /* Add underline on hover/focus */
+    padding: 40px 20px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.footer-section {
+    max-width: fit-content;
+}
+
+.footer-section h4 {
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.Footer a:hover {
+    color: var(--dss-red);
+    /* Add hover color */
+}
+
+/* Blurb Section */
+.footer-blurb {
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+    opacity: 0.7;
+    /* Slightly reduce opacity */
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.footer-blurb p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.footer-bottom a {
+    color: #E0E0E0;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 }

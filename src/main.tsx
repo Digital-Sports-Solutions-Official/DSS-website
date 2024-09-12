@@ -8,7 +8,7 @@ import ErrorPage from "./ErrorPage";
 
 import './index.css';
 import Home from './routes/Home/Home';
-import CLKR from './routes/CLKR/CLKR';
+import TinyLeague from './routes/TinyLeague/TinyLeague';
 import Order from './routes/Order/Order';
 import About from './routes/About/About';
 
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/clkr",
-    element: <CLKR />,
+    path: "/tinyLeague",
+    element: <TinyLeague />,
     errorElement: <ErrorPage />,
   },
   {
