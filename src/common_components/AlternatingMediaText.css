@@ -36,3 +36,10 @@
     max-height: 10rem;
     max-width: 20rem;
 }
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .AlternatingMediaText {
+        padding: 0;
+    }
+}

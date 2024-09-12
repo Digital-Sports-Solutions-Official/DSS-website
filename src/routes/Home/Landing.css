@@ -97,6 +97,13 @@
     .Landing {
         flex-direction: column;
         align-items: center;
+    }
+
+    .Landing .image-paragraph {
         padding: 0 2rem;
+    }
+
+    .Landing .slogan-holder p {
+        font-weight: 600;
     }
 }
