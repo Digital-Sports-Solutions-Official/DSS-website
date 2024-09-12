@@ -2,7 +2,7 @@
 
 /* TODO add slight tilt to left and right carousel items */
 
-.carousel-container {
+.ProductCarousel {
     width: 100%;
     margin: auto;
     text-align: center;
@@ -53,4 +53,34 @@
 
 .carousel .center .description {
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .carousel .product img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .carousel .product .name {
+        font-size: 1.2rem;
+    }
+
+    .carousel .product .description {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel .product img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .carousel .product .name {
+        font-size: 1rem;
+    }
+
+    .carousel .product .description {
+        width: 15rem;
+    }
 }
