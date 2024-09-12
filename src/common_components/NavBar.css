@@ -13,7 +13,6 @@
     background-color: var(--dss-gray);
     color: var(--dss-white);
 
-    padding-right: 0 clamp(0px, 5vw, 75px);
     /* Ensure padding is included in total width */
     box-sizing: border-box;
 
@@ -35,4 +34,15 @@
 
 .NavBar img {
     height: 75%;
+}
+
+@media (max-width: 768px) {
+    .NavBar {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .NavBar img {
+        display: none;
+    }
 }
