@@ -42,4 +42,26 @@
     .AlternatingMediaText {
         padding: 0;
     }
+
+    .AlternatingMediaText .entry {
+        padding: 1rem;
+    }
+
+    .AlternatingMediaText .entry .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AlternatingMediaText img {
+        max-height: 8rem;
+        max-width: 100%;
+    }
+
+    .AlternatingMediaText h3 {
+        text-align: center;
+    }
+
+    .AlternatingMediaText .entry p {
+        text-align: center;
+    }
 }

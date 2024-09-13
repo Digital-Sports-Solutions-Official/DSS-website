@@ -25,19 +25,20 @@ const ProductCarousel: React.FC = () => {
 
         // Adjust translateX values based on screen size
         const screenWidth = window.innerWidth;
-        const translateValue = screenWidth > 768 ? '25rem' : '15rem'; // Adjusted for smaller screens
+        const translateValue = screenWidth > 768 ? '25rem' : '10rem'; // Adjusted for smaller screens
 
+        //This should probably only scale images because 
         switch (offset) {
             case 0: // Center product
-                return { transform: 'translateX(0) scale(1.15)', zIndex: 2, opacity: 1 };
+                return { transform: 'translateX(0) scale(1.35)', zIndex: 2, opacity: 1 };
             case 1: // Right product
-                return { transform: `translateX(${translateValue}) scale(0.8)`, zIndex: 1, opacity: 0.9 };
+                return { transform: `translateX(${translateValue}) scale(1)`, zIndex: 1, opacity: 0.9 };
             case 2: // Right product
                 return { transform: `translateX(${parseFloat(translateValue) * 1.5}rem) scale(0)`, zIndex: 1, opacity: 0 };
             case totalProducts - 2: // Left out of frame (circular)
                 return { transform: `translateX(-${parseFloat(translateValue) * 1.5}rem) scale(0)`, zIndex: 1, opacity: 0 };
             case totalProducts - 1: // Left product (circular)
-                return { transform: `translateX(-${translateValue}) scale(0.8)`, zIndex: 1, opacity: 0.9 };
+                return { transform: `translateX(-${translateValue}) scale(1)`, zIndex: 1, opacity: 0.9 };
             default: // Teleport the farthest products to the sides
                 return { transform: 'translateX(1000px) scale(0.4)', opacity: 0 };
         }
@@ -85,12 +86,12 @@ const ProductCarousel: React.FC = () => {
                         key={index}
                         className={`product ${getProductOffset(index) === 0 ? 'center' : ''}`}
                         style={getProductPosition(index)}
-                        onClick={() => goToProduct(index)}
                     >
                         <Tilt {...getProductTiltProps(index)}>
                             <img
                                 src={product.imageUrl}
                                 alt={product.name}
+                                onClick={() => goToProduct(index)}
                             />
                         </Tilt>
 

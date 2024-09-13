@@ -2,26 +2,25 @@
 
 import './NavBar.css';
 
-interface NavBarProps {
-
-}
-
-
 const navBarMap: Map<string, string> = new Map([
-    ['Home', ' /'],
-    ['tinyLeague', 'tinyLeague'],
-    ['Order', 'order'],
-    ['About', 'about'],
+    ['Home', '/'],
+    ['tinyLeague', '/tinyLeague'],
+    ['Order', '/order'],
+    ['About', '/about'],
 ]);
 
+const NavBar = () => {
+    const currentPath = window.location.pathname; // Get the current URL path
 
-const NavBar = ({ }: NavBarProps) => {
-    //TODO do something fun in the navbar, maybe a css glow under mouse, maybe make the DSS logo spin when you hover over it
     return (
         <nav className={'NavBar'}>
-            <img src='/DSS-logo-transparent.png' />
+            <img src='/DSS-logo-transparent.png' alt="DSS Logo" />
             {Array.from(navBarMap.entries()).map(([anchorText, href]) => (
-                <a href={href}>
+                <a
+                    href={href}
+                    className={currentPath === `${href}` ? 'active' : ''} // Add 'active' class if the path matches
+                    key={href}
+                >
                     {anchorText}
                 </a>
             ))}

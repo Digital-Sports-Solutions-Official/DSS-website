@@ -28,15 +28,23 @@
     font-weight: 600;
 }
 
-.NavBar a:hover {
-    color: white;
+/* Glow effect for the active page link */
+.NavBar a.active {
+    color: var(--dss-red);
+    text-decoration: underline;
 }
+
+/* Add glow effect to links on hover */
+.NavBar a:hover {
+    color: var(--dss-red);
+}
+
 
 .NavBar img {
     height: 75%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .NavBar {
         justify-content: center;
         gap: 1rem;
