@@ -6,26 +6,26 @@ interface Product {
     description: string;
 }
 
-const clkr: Product = {
-    name: 'clkr',
-    imageUrl: '/CLKR.png',
-    description: 'this is the clkr! Fusce morbi consectetur habitant commodo curabitur purus. Tortor ex ultricies quis interdum iaculis; maecenas nascetur scelerisque cras. Penatibus habitant consequat luctus viverra curae eros maecenas metus class. Quisque mollis volutpat nisi vehicula maecenas penatibus fusce. Purus iaculis parturient aliquam phasellus ipsum ligula. Blandit ipsum eu sociosqu; vivamus et sodales maecenas? Tincidunt vehicula ex bibendum, taciti condimentum eleifend senectus? Vitae nulla dictumst urna pellentesque blandit quisque habitasse. Vel amet morbi penatibus parturient; dapibus adipiscing varius odio.',
+const dualDigitShotClock: Product = {
+    name: 'Dual-Digit shotClock',
+    imageUrl: '/Double-Digit-Shot-Clock.png',
+    description: 'Track every possession with confidence using the Dual-Digit shotClock. Featuring two seven-segment displays separated by a single decimal point and equipped with multi-color RGB LEDs, this innovative shot clock provides a dynamic range of colors to clearly indicate various game states, ensuring players, coaches, and fans are always in sync with every moment of the match.',
 }
 
-const ndaLogo: Product = {
-    name: 'NDA',
-    imageUrl: '/NDA-logo.jpg',
-    description: 'this is the NDA?',
+const miniGameClock: Product = {
+    name: 'Mini gameClock',
+    imageUrl: '/Full-Mini-Game-Clock.png',
+    description: 'Keep your matches running smoothly with the Mini gameClock. Designed with four seven-segment displays separated by a colon and equipped with multi-color RGB LEDs, this compact clock provides a clear and vibrant display of game times and states. Its small form factor ensures it fits seamlessly into any setting while delivering maximum visibility and precision.',
 }
 
-const vite: Product = {
-    name: 'vite',
+const clkBox: Product = {
+    name: 'clkBox',
     imageUrl: '/vite.svg',
-    description: 'Fringilla nunc suscipit augue facilisi tellus aliquet ipsum. Dui porta elementum class natoque platea nam curae id malesuada. Vitae auctor venenatis felis a at auctor. Neque sem euismod posuere nullam tempus vitae aenean nostra. Vel suspendisse class nulla vivamus quam consectetur semper. Auctor est aliquet magna ultrices tellus vel lacus ex feugiat. Ad penatibus amet suspendisse dapibus mollis sociosqu. Porttitor a pulvinar penatibus habitasse mi ultricies ex.',
+    description: 'Get your clkr hardware modules online with the clkBox. Effortlessly connect and manage your devices for quick, accurate match data presentation, with real-time data and statistics uploaded to your league\'s database. Easily customize and update your Clkr module layout directly on the device, allowing you to run your events smoothly and confidently every time.',
 }
 
 
 // ! Products should always contain at least 5 objects, repeats are fine if required.
-const products: Array<Product> = [clkr, ndaLogo, vite, vite, clkr, ndaLogo, vite]
+const products: Array<Product> = [dualDigitShotClock, miniGameClock, clkBox, dualDigitShotClock, miniGameClock, clkBox]
 
 export default products;

@@ -6,6 +6,7 @@
     width: 100%;
     margin: auto;
     text-align: center;
+    overflow: hidden;
 }
 
 .carousel {
@@ -28,7 +29,6 @@
 }
 
 .carousel .product img {
-    width: 17rem;
     height: 17rem;
     object-fit: cover;
     border-radius: 15px;
@@ -58,7 +58,6 @@
 
 @media (max-width: 768px) {
     .carousel .product img {
-        width: 12.5rem;
         height: 12.5rem;
     }
 
@@ -73,7 +72,6 @@
 
 @media (max-width: 480px) {
     .carousel .product img {
-        width: 10rem;
         height: 10rem;
     }
 

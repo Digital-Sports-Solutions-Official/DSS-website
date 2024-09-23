@@ -14,16 +14,18 @@ const NavBar = () => {
 
     return (
         <nav className={'NavBar'}>
+            <div className='row a-holder'>
+                {Array.from(navBarMap.entries()).map(([anchorText, href]) => (
+                    <a
+                        href={href}
+                        className={currentPath === `${href}` ? 'active' : ''} // Add 'active' class if the path matches
+                        key={href}
+                    >
+                        {anchorText}
+                    </a>
+                ))}
+            </div>
             <img src='/DSS_CombinationMark_FullColor.svg' alt="DSS Logo" />
-            {Array.from(navBarMap.entries()).map(([anchorText, href]) => (
-                <a
-                    href={href}
-                    className={currentPath === `${href}` ? 'active' : ''} // Add 'active' class if the path matches
-                    key={href}
-                >
-                    {anchorText}
-                </a>
-            ))}
         </nav>
     );
 };

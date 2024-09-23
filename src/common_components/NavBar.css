@@ -9,12 +9,14 @@
 
     width: 100%;
     height: 5rem;
+    padding: 0 7rem;
 
     background-color: var(--dss-gray);
     color: var(--dss-white);
 
     /* Ensure padding is included in total width */
     box-sizing: border-box;
+    justify-content: space-between;
 
     z-index: 20;
 }
@@ -39,6 +41,10 @@
     color: var(--dss-red);
 }
 
+.NavBar .a-holder {
+    margin: 0;
+    flex-grow: 0;
+}
 
 .NavBar img {
     height: 75%;
@@ -48,9 +54,18 @@
     .NavBar {
         justify-content: center;
         gap: 1rem;
+        padding: 0;
     }
 
     .NavBar img {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .NavBar {
+        justify-content: center;
+        gap: 1rem;
+        padding: 0;
     }
 }
