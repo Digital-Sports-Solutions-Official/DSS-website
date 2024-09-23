@@ -11,6 +11,7 @@ const events = [
     { date: '2022-04-01', description: 'Event 4 Description' },
 ];
 
+
 const About = () => {
     return (
         <div className="About">
