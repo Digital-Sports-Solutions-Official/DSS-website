@@ -1,17 +1,7 @@
 /* Noah Klein */
 
-import React, { useEffect, useState } from 'react';
 import './Timeline.css';
 import { Chrono } from 'react-chrono';
-
-interface Event {
-    date: string;
-    description: string;
-}
-
-interface TimelineProps {
-    events: Event[];
-}
 
 
 const items = [
@@ -39,14 +29,7 @@ const items = [
     },
 ];
 
-const Timeline: React.FC<TimelineProps> = ({ events }) => {
-    const [animate, setAnimate] = useState(false);
-
-    useEffect(() => {
-        // Trigger animation on mount
-        setAnimate(true);
-    }, []);
-
+const Timeline = () => {
     return (
         <div style={{ width: '100%' }}>
             <Chrono
