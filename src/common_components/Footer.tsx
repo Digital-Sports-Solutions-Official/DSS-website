@@ -10,8 +10,9 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-section">
                     <h4>Get in touch</h4>
-                    <p>business@pizzapizza.io</p>
-                    <p>hello@pizzapizza.io</p>
+                    <p><a href="mailto:contact@digitalsportssolutions.com" target='_blank'>contact@digitalsportssolutions.com</a></p>
+                    <p><a href="mailto:support@digitalsportssolutions.com" target='_blank'>support@digitalsportssolutions.com</a></p>
+                    <p><a href="tel:216-924-5393">216-924-5393</a></p>
                 </div>
 
                 <div className="footer-section">
@@ -43,7 +44,7 @@ const Footer = () => {
 
             <div className="footer-bottom">
                 <p>&copy; 2024 Digital Sports Solutions LLC</p>
-                <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms of Service</a><span>|</span><a href="#">Privacy Policy</a></p>
             </div>
         </footer>
     )

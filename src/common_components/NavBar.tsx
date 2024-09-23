@@ -14,7 +14,7 @@ const NavBar = () => {
 
     return (
         <nav className={'NavBar'}>
-            <img src='/DSS-logo-transparent.png' alt="DSS Logo" />
+            <img src='/DSS_CombinationMark_FullColor.svg' alt="DSS Logo" />
             {Array.from(navBarMap.entries()).map(([anchorText, href]) => (
                 <a
                     href={href}
