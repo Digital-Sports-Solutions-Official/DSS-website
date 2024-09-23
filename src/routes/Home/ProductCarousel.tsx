@@ -13,11 +13,6 @@ const ProductCarousel: React.FC = () => {
         setCurrentIndex(index);
     };
 
-    const getProductOffset = (index: number): number => {
-        const totalProducts = products.length;
-        return (index - currentIndex + totalProducts) % totalProducts;
-    };
-
     const getProductPosition = (index: number) => {
         const totalProducts = products.length;
         const offset = (index - currentIndex + totalProducts) % totalProducts;

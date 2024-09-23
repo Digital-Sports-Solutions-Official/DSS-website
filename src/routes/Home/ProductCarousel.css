@@ -26,16 +26,17 @@
     position: absolute;
     transition: transform 0.8s ease-in-out, opacity 0.5s ease-in-out;
     justify-content: flex-start;
+    max-width: 100dvw;
 }
 
 .carousel .product img {
-    height: 17rem;
+    height: clamp(0px, 25dvw, 17rem);
     object-fit: cover;
     border-radius: 15px;
     transition: transform 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0 0 0.75rem var(--dss-gray));
     cursor: pointer;
-
+    -webkit-tap-highlight-color: transparent;
 }
 
 .carousel .product .name {
@@ -50,16 +51,19 @@
     top: 100%;
     transition: opacity 0.8s ease-in-out;
     width: 30rem;
+    max-width: 60vw;
     flex-grow: 1;
     opacity: 0;
 }
 
 .carousel .center-product .description {
     opacity: 1;
+    overflow-wrap: break-word;
 }
 
 
-/* Position classes */
+/* Product positional classes */
+
 .center-product {
     transform: translateX(0) scale(1.35);
     z-index: 2;
@@ -67,95 +71,29 @@
 }
 
 .right-product {
-    transform: translateX(25rem) scale(1);
+    transform: translateX(max(10rem, 33dvw)) scale(1);
     z-index: 1;
     opacity: 0.9;
 }
 
 .right-out-product {
-    transform: translateX(37.5rem) scale(0);
+    transform: translateX(66dvw) scale(0);
     z-index: 1;
     opacity: 0;
 }
 
 .left-product {
-    transform: translateX(-25rem) scale(1);
+    transform: translateX(min(-10rem, -33dvw)) scale(1);
     z-index: 1;
     opacity: 0.9;
 }
 
 .left-out-product {
-    transform: translateX(-37.5rem) scale(0);
+    transform: translateX(-66dvw) scale(0);
     z-index: 1;
     opacity: 0;
 }
 
 .hidden-product {
-    transform: translateX(1000px) scale(0.4);
     opacity: 0;
-}
-
-
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .carousel .product img {
-        height: 12.5rem;
-    }
-
-    .carousel .product .name {
-        font-size: 1.2rem;
-    }
-
-    .carousel .product .description {
-        width: 20rem;
-    }
-
-    .right-product {
-        transform: translateX(10rem) scale(1);
-    }
-
-    .right-out-product {
-        transform: translateX(15rem) scale(0);
-    }
-
-    .left-product {
-        transform: translateX(-10rem) scale(1);
-    }
-
-    .left-out-product {
-        transform: translateX(-15rem) scale(0);
-    }
-}
-
-
-@media (max-width: 480px) {
-    .carousel .product img {
-        height: 10rem;
-    }
-
-    .carousel .product .name {
-        font-size: 1.2rem;
-    }
-
-    .carousel .product .description {
-        width: 20rem;
-    }
-
-    .right-product {
-        transform: translateX(10rem) scale(1);
-    }
-
-    .right-out-product {
-        transform: translateX(15rem) scale(0);
-    }
-
-    .left-product {
-        transform: translateX(-10rem) scale(1);
-    }
-
-    .left-out-product {
-        transform: translateX(-15rem) scale(0);
-    }
-
 }
