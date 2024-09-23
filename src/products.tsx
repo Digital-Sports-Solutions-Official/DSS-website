@@ -14,7 +14,7 @@ const dualDigitShotClock: Product = {
 
 const miniGameClock: Product = {
     name: 'Mini gameClock',
-    imageUrl: '/Full-Mini-Game-Clock.png',
+    imageUrl: '/Full-Mini-Game-Clock.PNG',
     description: 'Keep your matches running smoothly with the Mini gameClock. Designed with four seven-segment displays separated by a colon and equipped with multi-color RGB LEDs, this compact clock provides a clear and vibrant display of game times and states. Its small form factor ensures it fits seamlessly into any setting while delivering maximum visibility and precision.',
 }
 

@@ -1,10 +1,10 @@
 /* Noah Klein */
 
 import React, { useState } from 'react';
-import Tilt, { ReactParallaxTiltProps } from "react-parallax-tilt";
-import products from "../../products";
+import Tilt, { ReactParallaxTiltProps } from 'react-parallax-tilt';
+import products from '../../products';
 
-import './ProductCarousel.css'
+import './ProductCarousel.css';
 
 const ProductCarousel: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,34 +13,28 @@ const ProductCarousel: React.FC = () => {
         setCurrentIndex(index);
     };
 
-
     const getProductOffset = (index: number): number => {
         const totalProducts = products.length;
         return (index - currentIndex + totalProducts) % totalProducts;
-    }
+    };
 
     const getProductPosition = (index: number) => {
         const totalProducts = products.length;
         const offset = (index - currentIndex + totalProducts) % totalProducts;
 
-        // Adjust translateX values based on screen size
-        const screenWidth = window.innerWidth;
-        const translateValue = screenWidth > 768 ? '25rem' : '10rem'; // Adjusted for smaller screens
-
-        //This should probably only scale images because 
         switch (offset) {
-            case 0: // Center product
-                return { transform: 'translateX(0) scale(1.35)', zIndex: 2, opacity: 1 };
-            case 1: // Right product
-                return { transform: `translateX(${translateValue}) scale(1)`, zIndex: 1, opacity: 0.9 };
-            case 2: // Right product
-                return { transform: `translateX(${parseFloat(translateValue) * 1.5}rem) scale(0)`, zIndex: 1, opacity: 0 };
-            case totalProducts - 2: // Left out of frame (circular)
-                return { transform: `translateX(-${parseFloat(translateValue) * 1.5}rem) scale(0)`, zIndex: 1, opacity: 0 };
-            case totalProducts - 1: // Left product (circular)
-                return { transform: `translateX(-${translateValue}) scale(1)`, zIndex: 1, opacity: 0.9 };
-            default: // Teleport the farthest products to the sides
-                return { transform: 'translateX(1000px) scale(0.4)', opacity: 0 };
+            case 0:
+                return 'center-product'; // Center product
+            case 1:
+                return 'right-product'; // Right product
+            case 2:
+                return 'right-out-product'; // Right out of frame
+            case totalProducts - 2:
+                return 'left-out-product'; // Left out of frame
+            case totalProducts - 1:
+                return 'left-product'; // Left product
+            default:
+                return 'hidden-product'; // Hidden products
         }
     };
 
@@ -63,19 +57,11 @@ const ProductCarousel: React.FC = () => {
             transitionSpeed: 1000,
             glareEnable: true,
             glareMaxOpacity: 0.15,
-            glarePosition: "all",
+            glarePosition: 'all',
         };
 
-
-        if (offset)
-            return offsetTiltProps;
-        else
-            return spotlightTiltProps;
-    }
-
-
-    // Make autoscroll or some way to indicate to users that this thing moves
-
+        return offset ? offsetTiltProps : spotlightTiltProps;
+    };
 
     return (
         <div className="ProductCarousel">
@@ -84,17 +70,12 @@ const ProductCarousel: React.FC = () => {
                 {products.map((product, index) => (
                     <div
                         key={index}
-                        className={`product ${getProductOffset(index) === 0 ? 'center' : ''}`}
-                        style={getProductPosition(index)}
+                        className={`product ${getProductPosition(index)}`}
+                        onClick={() => goToProduct(index)}
                     >
                         <Tilt {...getProductTiltProps(index)}>
-                            <img
-                                src={product.imageUrl}
-                                alt={product.name}
-                                onClick={() => goToProduct(index)}
-                            />
+                            <img src={product.imageUrl} alt={product.name} />
                         </Tilt>
-
                         <p className="name">{product.name}</p>
                         <p className="description">{product.description}</p>
                     </div>
