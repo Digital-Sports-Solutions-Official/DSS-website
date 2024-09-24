@@ -50,9 +50,7 @@ const ProductCarousel: React.FC = () => {
             tiltMaxAngleY: 20,
             perspective: 1400,
             transitionSpeed: 1000,
-            glareEnable: true,
-            glareMaxOpacity: 0.15,
-            glarePosition: 'all',
+            glareEnable: false,
         };
 
         return offset ? offsetTiltProps : spotlightTiltProps;

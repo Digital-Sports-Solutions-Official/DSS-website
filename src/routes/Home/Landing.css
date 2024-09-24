@@ -34,12 +34,13 @@
 
 .Landing .slogan-holder p {
     line-height: 2rem;
+    color: var(--dss-gray);
 }
 
 
 /* Apply different animation delays */
 .Landing .slogan-holder div:nth-child(1) {
-    background: linear-gradient(to right, var(--dss-gray) 0%, var(--dss-gray) 15%, #949494 50%, var(--dss-gray) 75%, var(--dss-gray) 100%);
+    background: linear-gradient(to right, var(--dss-gray) 0%, var(--dss-gray) 15%, var(--dss-orange) 50%, var(--dss-gray) 75%, var(--dss-gray) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -48,7 +49,7 @@
 }
 
 .Landing .slogan-holder div:nth-child(2) {
-    background: linear-gradient(to right, var(--dss-gray) 0%, var(--dss-gray) 15%, #949494 50%, var(--dss-gray) 75%, var(--dss-gray) 100%);
+    background: linear-gradient(to right, var(--dss-gray) 0%, var(--dss-gray) 15%, var(--dss-orange) 50%, var(--dss-gray) 75%, var(--dss-gray) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -59,7 +60,7 @@
 }
 
 .Landing .slogan-holder div:nth-child(3) {
-    background: linear-gradient(to right, var(--dss-gray) 0%, var(--dss-gray) 15%, #949494 50%, var(--dss-gray) 75%, var(--dss-gray) 100%);
+    background: linear-gradient(to right, var(--dss-gray) 0%, var(--dss-gray) 15%, var(--dss-orange) 50%, var(--dss-gray) 75%, var(--dss-gray) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

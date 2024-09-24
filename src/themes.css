@@ -12,9 +12,13 @@
 }
 
 :root {
-    --dss-gray: #424150;
-    --dss-red: #FF2558;
-    --dss-white: #E7E8E8;
+    /* --dss-gray: #424150;
+    --dss-orange: #FF2558;
+    --dss-white: #E7E8E8; */
+    --dss-gray: #EEEE;
+    --dss-orange: #FF5900;
+    --dss-red: #FF0000;
+    --dss-white: #1F1F1F;
 }
 
 :root .column {
@@ -40,6 +44,7 @@
     text-align: center;
     font-size: 4rem;
     margin-bottom: 1.5rem;
+    color: var(--dss-orange);
 }
 
 

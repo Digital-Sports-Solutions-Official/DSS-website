@@ -1,6 +1,6 @@
 /* General footer styles */
 .Footer {
-    background-color: var(--dss-gray);
+    background-color: #9999;
     color: var(--dss-white);
     padding: 40px 20px;
     width: 100%;
@@ -44,7 +44,7 @@
 }
 
 .Footer a:hover {
-    color: var(--dss-red);
+    color: var(--dss-orange);
     /* Add hover color */
 }
 

@@ -27,7 +27,9 @@ const Timeline2 = () => {
                             {event.date}
                         </div>
 
-                        <div className="bubble-line" />
+                        <div className="bubble-line" style={{ backgroundPositionY: `${100 * index}px` }} >
+                            <img src='/DSS_LogoMark_White.svg' />
+                        </div>
 
                         <div className="event-box">
                             <div className='event'>

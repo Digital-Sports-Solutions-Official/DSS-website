@@ -51,7 +51,7 @@
 }
 
 .RequestQuote .submit-button:hover {
-    background-color: var(--dss-red);
+    background-color: var(--dss-orange);
 }
 
 .RequestQuote textarea {

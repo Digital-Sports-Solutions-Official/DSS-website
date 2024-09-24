@@ -32,13 +32,13 @@
 
 /* Glow effect for the active page link */
 .NavBar a.active {
-    color: var(--dss-red);
+    color: var(--dss-orange);
     text-decoration: underline;
 }
 
 /* Add glow effect to links on hover */
 .NavBar a:hover {
-    color: var(--dss-red);
+    color: var(--dss-orange);
 }
 
 .NavBar .a-holder {

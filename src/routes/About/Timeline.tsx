@@ -53,7 +53,7 @@ const Timeline = () => {
                     secondary: 'var(--dss-gray)',
                     cardBgColor: 'white',
                     titleColor: 'var(--dss-gray)',
-                    titleColorActive: 'var(--dss-red)',
+                    titleColorActive: 'var(--dss-orange)',
                 }}
             />
         </div>
