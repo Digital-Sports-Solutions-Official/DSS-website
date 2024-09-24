@@ -30,7 +30,7 @@
 }
 
 .carousel .product img {
-    height: clamp(0px, 25dvw, 17rem);
+    height: clamp(0px, 20dvw, 17rem);
     object-fit: cover;
     border-radius: 15px;
     transition: transform 0.3s ease;
@@ -42,8 +42,8 @@
 .carousel .product .name {
     margin-top: 0.7rem;
     margin-bottom: 0rem;
-    font-size: 0.8rem;
-    color: #555;
+    font-size: 1rem;
+    color: var(--dss-orange);
 }
 
 .carousel .product .description {

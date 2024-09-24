@@ -8,8 +8,6 @@
 - Keep this in mind https://www.bygrantkilgard.com/work/dm-4
 
 
-Try dark theme on Andrew's slides
-
 
 ## Notes
 - I could potentially merge all DSS facing information into one large JSON file for easy modification to products, partners, etc...
@@ -24,4 +22,9 @@ Have a quote submitter slide out from the right so that the user can go back and
 
 
 ## Mobile specifications
-Built to be functional and reactive for devices with a screen-width of at least 800 pixels
+Built to be functional and reactive for devices with a screen-width of at least 480 pixels
+
+
+## Timeline ideas
+- Highlighted events should slightly grow, icon should turn black and grow slightly as well
+- Just make the line one long thing and the middle section can be only the icon
