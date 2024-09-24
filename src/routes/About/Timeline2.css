@@ -69,13 +69,15 @@
     width: 4rem;
     order: 2;
     z-index: 2;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out;
+    filter: none;
 }
 
 .Timeline .selected .indicator {
     transform: scale(120%);
-    transition: transform 0.2s ease-in-out;
-    transition: filter 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out;
     filter: brightness(0) invert(1);
 }
 
