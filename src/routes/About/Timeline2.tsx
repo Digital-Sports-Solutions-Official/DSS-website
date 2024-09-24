@@ -1,5 +1,5 @@
 /* Noah Klein */
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Timeline2.css';
 
 const events = [
@@ -10,26 +10,30 @@ const events = [
 ];
 
 const Timeline2 = () => {
-    // const [animate, setAnimate] = useState(false);
+    const [animate, setAnimate] = useState<boolean>(false);
+    const [selected, setSelected] = useState<number>(0);
 
     useEffect(() => {
         // Trigger animation on mount
-        // setAnimate(true);
+        setAnimate(true);
     }, []);
 
+    const handleEventClick = (index: number) => {
+        setSelected(index);
+    }
 
     return (
         <div className="Timeline column">
             {events.map((event, index) => (
-                <div className={`row entry${index % 2 == 0 ? ' even' : ''}`}>
+                <div className={`row entry${index % 2 == 0 ? ' even' : ' odd'}${index == selected ? ' selected' : ''}`}>
 
                     <div className='date-box'>
                         {event.date}
                     </div>
 
-                    <img className="indicator" src='/DSS_LogoMark_White.svg' />
+                    <img className="indicator" src='/DSS_LogoMark_FullColor.svg' />
 
-                    <div className="event-box">
+                    <div className={`event-box${animate ? ' slide-in' : ''}`} onClick={() => handleEventClick(index)}>
                         <div className='event'>
                             <p>{event.description}</p>
                         </div>
