@@ -37,6 +37,8 @@ const Timeline = () => {
                 mode="VERTICAL_ALTERNATING"
                 allowDynamicUpdate={true}
                 disableToolbar={true}
+                timelinePointDimension={32}
+                lineWidth={10}
                 classNames={{
                     card: 'my-card',
                     cardMedia: 'my-card-media',
