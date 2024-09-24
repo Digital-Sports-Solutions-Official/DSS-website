@@ -95,7 +95,7 @@
     background: linear-gradient(to bottom, var(--dss-orange) 35%, var(--dss-red) 65%, var(--dss-orange) 75%);
     background-size: 100% 200%;
 
-    animation: shine 5s infinite linear;
+    animation: timeline-shine 5s infinite linear;
 }
 
 /* Animations */
@@ -108,7 +108,7 @@
     animation: slideIn 1s forwards;
 }
 
-@keyframes shine {
+@keyframes timeline-shine {
     0% {
         background-position: 0% 0%;
     }
