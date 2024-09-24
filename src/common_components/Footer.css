@@ -1,7 +1,9 @@
 /* General footer styles */
 .Footer {
-    background-color: #9999;
-    color: var(--dss-black);
+    /* background-color: var(--dss-orange); */
+    background: linear-gradient(to bottom, var(--dss-orange), var(--dss-red));
+
+    color: white;
     padding: 40px 20px;
     width: 100%;
     position: relative;
@@ -28,7 +30,6 @@
 
 .footer-section h4 {
     font-weight: 600;
-    color: #FFFFFF;
     margin-bottom: 10px;
 }
 
@@ -38,13 +39,13 @@
 }
 
 .footer-section a {
-    color: #FFFFFF;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .Footer a:hover {
-    color: var(--dss-orange);
+    color: black;
     /* Add hover color */
 }
 
@@ -53,8 +54,6 @@
     margin: 20px auto;
     max-width: 1200px;
     text-align: center;
-    opacity: 0.7;
-    /* Slightly reduce opacity */
     font-size: 12px;
     line-height: 1.5;
 }
@@ -68,7 +67,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--dss-black);
     padding-top: 20px;
     margin-top: 40px;
     max-width: 1200px;
@@ -79,11 +78,10 @@
 .footer-bottom p {
     margin: 0;
     font-size: 12px;
-    opacity: 0.8;
 }
 
 .footer-bottom a {
-    color: #E0E0E0;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
