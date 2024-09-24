@@ -18,12 +18,12 @@ body {
   font-family: montserrat;
 
   color: var(--dss-gray);
-  background-color: var(--dss-white);
+  background-color: var(--dss-black);
 }
 
 textarea {
   font-family: montserrat;
-  resize: vertical; 
+  resize: vertical;
 }
 
 #error-page {

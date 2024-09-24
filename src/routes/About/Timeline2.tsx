@@ -19,26 +19,25 @@ const Timeline2 = () => {
 
 
     return (
-        <div className="Timeline">
-            <div className="column">
-                {events.map((event, index) => (
-                    <div className={`row entry${index % 2 == 0 ? ' even' : ''}`}>
-                        <div className='date-box'>
-                            {event.date}
-                        </div>
+        <div className="Timeline column">
+            {events.map((event, index) => (
+                <div className={`row entry${index % 2 == 0 ? ' even' : ''}`}>
 
-                        <div className="bubble-line" style={{ backgroundPositionY: `${100 * index}px` }} >
-                            <img src='/DSS_LogoMark_White.svg' />
-                        </div>
+                    <div className='date-box'>
+                        {event.date}
+                    </div>
 
-                        <div className="event-box">
-                            <div className='event'>
-                                <p>{event.description}</p>
-                            </div>
+                    <img className="indicator" src='/DSS_LogoMark_White.svg' />
+
+                    <div className="event-box">
+                        <div className='event'>
+                            <p>{event.description}</p>
                         </div>
                     </div>
-                ))}
-            </div>
+
+                </div>
+            ))}
+            <div className='line' />
         </div >
     );
 };

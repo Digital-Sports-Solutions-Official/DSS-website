@@ -2,6 +2,7 @@
 
 .Timeline {
     padding: 20px;
+    position: relative;
 }
 
 .Timeline .entry {
@@ -13,6 +14,7 @@
     padding: 3rem 0;
     list-style: none;
     margin: 0;
+    color: var(--dss-black);
 }
 
 .Timeline .entry.even .event-box {
@@ -32,31 +34,27 @@
     justify-content: flex-end;
     width: 37.5%;
     order: 1;
+    color: var(--dss-gray);
 }
 
-.Timeline .bubble-line {
+.Timeline .indicator {
     width: 4rem;
-    height: 4rem;
     order: 2;
-}
-
-.Timeline .bubble-line img {
-    position: relative;
     z-index: 2;
 }
 
-.Timeline .bubble-line::after {
+.Timeline .line {
     position: absolute;
-    /* background: var(--dss-gray); */
-    background: linear-gradient(#FF5900, #FF0000);
-    content: '';
     display: block;
     top: 0;
     bottom: 0;
-    position: absolute;
+
     width: 0.75rem;
-    z-index: 0;
-    transform: translateX(1.75rem);
+
+    background: linear-gradient(var(--dss-orange), var(--dss-red), var(--dss-orange));
+    background-size: 100% 200%;
+
+    animation: shine 5s infinite linear;
 }
 
 .Timeline .event-box {
@@ -68,13 +66,20 @@
 }
 
 .Timeline .event {
-    position: relative;
     display: flex;
     align-items: center;
     width: 37.5%;
-    order: 1;
-    background-color: #fff;
+    background-color: var(--dss-gray);
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    order: 3;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% -200%;
+    }
 }

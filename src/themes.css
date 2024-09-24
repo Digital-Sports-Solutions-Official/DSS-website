@@ -12,13 +12,10 @@
 }
 
 :root {
-    /* --dss-gray: #424150;
-    --dss-orange: #FF2558;
-    --dss-white: #E7E8E8; */
     --dss-gray: #EEEE;
     --dss-orange: #FF5900;
     --dss-red: #FF0000;
-    --dss-white: #1F1F1F;
+    --dss-black: #1F1F1F;
 }
 
 :root .column {

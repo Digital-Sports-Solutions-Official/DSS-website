@@ -1,7 +1,7 @@
 /* General footer styles */
 .Footer {
     background-color: #9999;
-    color: var(--dss-white);
+    color: var(--dss-black);
     padding: 40px 20px;
     width: 100%;
     position: relative;
