@@ -9,8 +9,8 @@ const About = () => {
     return (
         <div className="About">
             <NavBar />
-            <Timeline />
             <Timeline2 />
+            <Timeline />
             <Footer />
         </div>
     );

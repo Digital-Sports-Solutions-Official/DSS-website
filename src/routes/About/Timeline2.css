@@ -37,12 +37,16 @@
 }
 
 .Timeline .event {
-    display: flex;
-    align-items: center;
-    width: 37.5%;
     background-color: var(--dss-gray);
     border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0 0 1rem var(--dss-orange));
+    padding: 0.5rem;
+    text-wrap: pretty;
+    transition: filter 0.5s linear;
+}
+
+.Timeline .selected .event {
+    filter: drop-shadow(0 0 0.75rem var(--dss-red));
 }
 
 
@@ -87,7 +91,8 @@
 
     width: 0.75rem;
 
-    background: linear-gradient(var(--dss-orange), var(--dss-red), var(--dss-orange));
+    /* background: linear-gradient(var(--dss-orange), var(--dss-red), var(--dss-orange)); */
+    background: linear-gradient(to bottom, var(--dss-orange) 35%, var(--dss-red) 65%, var(--dss-orange) 75%);
     background-size: 100% 200%;
 
     animation: shine 5s infinite linear;

@@ -1,18 +1,52 @@
 import { useState, useEffect, useRef } from 'react';
 import './Timeline2.css';
 
-const events = [
-    { date: 'Oct. 2022', description: 'The Digital Shotclock concept is conceived' },
-    { date: 'April 2023', description: 'Shotclock prototype demoed at 2023 NCDA Nationals at Ohio University' },
-    { date: 'May 2023', description: 'Digital Sports Solutions LLC is founded' },
-    { date: 'June - November 2023', description: 'Shotclock and Gameclock box (Generation 2) demoed at various NDA/NCDA events' },
-    { date: 'December 2023', description: 'Web Application concept is conceived' },
-    { date: 'April 2024', description: 'Generation 2 Game Manager Box and Web Application demoed at 2024 NCDA Nationals.' },
-    { date: 'May 2024', description: 'Total ecosystem begins development' },
+interface Event {
+    date: string;
+    title: string;
+    description: string;
+}
+
+const events: Array<Event> = [
+    {
+        date: 'Oct. 2022',
+        title: 'The Beginning',
+        description: 'The Digital Shotclock concept is conceived'
+    },
+    {
+        date: 'April 2023',
+        title: 'Prototype Demo',
+        description: 'Shotclock prototype demoed at 2023 NCDA Nationals at Ohio University'
+    },
+    {
+        date: 'May 2023',
+        title: 'DSS',
+        description: 'Digital Sports Solutions LLC is founded'
+    },
+    {
+        date: 'June - November 2023',
+        title: 'V2 Demo',
+        description: 'Shotclock and Gameclock box (Generation 2) demoed at various NDA/NCDA events'
+    },
+    {
+        date: 'December 2023',
+        title: 'Web App',
+        description: 'Web Application concept is conceived'
+    },
+    {
+        date: 'April 2024',
+        title: 'NCDA Nationals Demo',
+        description: 'Generation 2 Game Manager Box and Web Application demoed at 2024 NCDA Nationals.'
+    },
+    {
+        date: 'May 2024',
+        title: 'Now',
+        description: 'Total ecosystem begins development'
+    },
 ];
 
 const Timeline2 = () => {
-    const [selected, setSelected] = useState<number>(0);
+    const [selected, setSelected] = useState<number>(-1);
     const eventRefs = useRef<(HTMLDivElement | null)[]>([]);
 
     useEffect(() => {
@@ -20,7 +54,7 @@ const Timeline2 = () => {
             (entries) => {
                 entries.forEach((entry) => {
                     const index = eventRefs.current.indexOf(entry.target as HTMLDivElement);
-                    
+
                     if (entry.isIntersecting && index !== -1) {
                         // Update the selected index when the entry comes into view
                         setSelected(index);
@@ -28,7 +62,7 @@ const Timeline2 = () => {
                     }
                 });
             },
-            { threshold: 0.7 } // Trigger when 70% of the element is visible
+            { threshold: 1 } // Trigger when 100% of the element is visible
         );
 
         eventRefs.current.forEach((event) => {
@@ -45,6 +79,7 @@ const Timeline2 = () => {
             });
         };
     }, []);
+
 
     return (
         <div className="Timeline column">
@@ -63,7 +98,8 @@ const Timeline2 = () => {
                         ref={(el) => (eventRefs.current[index] = el)}
                         className={`event-box`}
                     >
-                        <div className="event">
+                        <div className="event column">
+                            <h3>{event.title}</h3>
                             <p>{event.description}</p>
                         </div>
                     </div>
