@@ -4,7 +4,7 @@ import './NavBar.css';
 
 const navBarMap: Map<string, string> = new Map([
     ['Home', '/'],
-    // ['tinyLeague', '/tinyLeague'],
+    ['tinyLeague', '/tinyLeague'],
     ['Order', '/order'],
     ['About', '/about'],
 ]);
