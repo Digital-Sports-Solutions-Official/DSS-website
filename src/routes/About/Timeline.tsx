@@ -9,6 +9,8 @@ const Timeline = () => {
     const [selected, setSelected] = useState<number>(-1);
     const eventRefs = useRef<(HTMLDivElement | null)[]>([]);
 
+    // TODO make timeline actually work on mobile
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {

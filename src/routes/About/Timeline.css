@@ -5,6 +5,11 @@
     position: relative;
 }
 
+
+/* .Timeline .entry .Embed .Feedback {
+    display: none;
+} */
+
 .Timeline .entry {
     display: flex;
     position: relative;

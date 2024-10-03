@@ -1,6 +1,7 @@
 /* Noah Klein */
 
 import { InstagramEmbed } from "react-social-media-embed/dist/components/embeds/InstagramEmbed";
+import { YouTubeEmbed } from "react-social-media-embed/dist/components/embeds/YouTubeEmbed";
 
 interface Event {
     date: string;
@@ -14,11 +15,13 @@ export const events: Array<Event> = [
         date: 'Oct. 2022',
         title: 'The Beginning',
         description: 'The Digital Shotclock concept is conceived',
+        embed: <InstagramEmbed url="https://www.instagram.com/p/CkgrDwWAp-5/" width={"75%"} />,
     },
     {
         date: 'April 2023',
         title: 'Prototype Demo',
         description: 'Shotclock prototype demoed at 2023 NCDA Nationals at Ohio University',
+        embed: <YouTubeEmbed url="https://www.youtube.com/watch?v=84cbX2pEHPM" />
     },
     {
         date: 'May 2023',
@@ -39,10 +42,8 @@ export const events: Array<Event> = [
         date: 'April 2024',
         title: 'NCDA Nationals Demo',
         description: 'Generation 2 Game Manager Box and Web Application demoed at 2024 NCDA Nationals.',
-        embed:
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <InstagramEmbed url="https://www.instagram.com/p/C5qUbMcgfZ2/" width={"100%"} />
-            </div>,
+        embed: <InstagramEmbed url="https://www.instagram.com/p/C5qUbMcgfZ2/" width={"75%"} />,
+
     },
     {
         date: 'May 2024',
