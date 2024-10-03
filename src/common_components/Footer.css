@@ -11,6 +11,12 @@
     margin-top: 4rem;
 }
 
+.Footer .logo {
+    height: 4rem;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(115deg) brightness(102%) contrast(103%);
+    margin-top: 1.3em;
+}
+
 .Footer span {
     margin: 0 5px;
 }
@@ -28,9 +34,14 @@
     max-width: fit-content;
 }
 
+
 .footer-section h4 {
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+.footer-section.centered h4 {
+    text-align: center;
 }
 
 .footer-section p {

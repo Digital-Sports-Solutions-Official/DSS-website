@@ -1,4 +1,5 @@
 /* Noah Klein */
+import { FaInstagram, FaLinkedin, FaDiscord, FaFacebook } from "react-icons/fa";
 
 import './Footer.css';
 
@@ -8,6 +9,7 @@ const Footer = () => {
     return (
         <footer className="Footer">
             <div className="footer-content">
+
                 <div className="footer-section">
                     <h4>Get in touch</h4>
                     <p><a href="mailto:contact@digitalsportssolutions.com" target='_blank'>contact@digitalsportssolutions.com</a></p>
@@ -15,13 +17,16 @@ const Footer = () => {
                     <p><a href="tel:216-924-5393">216-924-5393</a></p>
                 </div>
 
-                <div className="footer-section">
+                <div className="footer-section centered">
                     <h4>Connect</h4>
-                    <p><a href="https://www.instagram.com/digitalsportssolutions?igsh=MTc0YXltdXBmdjFqcw==" target='_blank'>Instagram</a></p>
-                    <p><a href="https://www.linkedin.com/company/digitalsportssolutions/" target='_blank'>LinkedIn</a></p>
+                    <a href="https://www.instagram.com/digitalsportssolutions?igsh=MTc0YXltdXBmdjFqcw==" target='_blank'><FaInstagram size={'2rem'} /></a>
+                    <a href="https://www.linkedin.com/company/digitalsportssolutions/" target='_blank'> <FaLinkedin size={'2rem'} /></a>
+                    <a href="https://discord.gg/T2qfkr3JqT" target='_blank'> <FaDiscord size={'2rem'} /> </a>
+                    {/* TODO MAKE THIS POINT TO THE ACTUAL FACEBOOK */}
+                    <a href="/error" target='_blank'> <FaFacebook size={'2rem'} /> </a>
                 </div>
 
-                {/* TODO Make footer sections row elements and seperate everything except for the two emails */}
+                <img src="DSS_CombinationMark_FullColor.svg" className="logo" />
             </div>
 
             <div className="footer-blurb">
