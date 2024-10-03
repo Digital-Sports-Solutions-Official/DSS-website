@@ -26,7 +26,6 @@
 
 .Order .PreOrder form label {
     margin-bottom: 10px;
-    display: block;
     width: 100%;
     max-width: 400px;
     text-align: left;
@@ -36,11 +35,12 @@
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 20px;
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
+    max-width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 .Order .PreOrder form button {
@@ -65,4 +65,16 @@
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     animation: shine 5s infinite linear;
+}
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .Order .PreOrder {
+        padding: 1rem;
+    }
+
+    .Order .PreOrder h1 {
+        font-size: 3rem;
+    }
 }

@@ -15,7 +15,7 @@ const PreOrder = () => {
             >
                 <label>
                     Your email:
-                    <input type="email" name="email" />
+                    <input type="email" name="email" required />
                 </label>
 
                 <button type="submit">Join</button>
