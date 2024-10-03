@@ -7,10 +7,7 @@ const RequestQuote = ({ }) => {
     return (
         <div className='RequestQuote'>
             <h2>Wondering if we can meet the needs of your league? Contact us!</h2>
-            
-
-            {/* TODO This is a really good short term solution but something better should be done eventually */}
-            <form action="https://formsubmit.co/769eea541dd66c08f65d7c9ff1b01712" method="POST" className="quote-form">
+            <form action="https://formspree.io/f/mldereay" method="POST" className="quote-form">
                 <div className="input-group">
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" required className="input-field" />

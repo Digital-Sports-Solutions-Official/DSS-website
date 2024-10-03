@@ -1,61 +1,112 @@
-/* Noah Klein */
-
+import { useState, useEffect, useRef } from 'react';
 import './Timeline.css';
-import { Chrono } from 'react-chrono';
 
+interface Event {
+    date: string;
+    title: string;
+    description: string;
+}
 
-const items = [
+const events: Array<Event> = [
     {
-        title: "Oct. 2022",
-        cardTitle: "The idea",
-        cardDetailedText: "Digital Sports Solutions began when Adam and Andrew were on the way home from playing in a National Collegiate Dodgeball Association (NCDA) tournament. They both recognized an opportunity to innovate on the NCDA’s manual shotclocking system by using their extensive engineering backgrounds to develop a more automated solution.",
-        media: {
-            type: "IMAGE",
-            source: {
-                url: "/timeline-pic.jpg"
-            }
-        }
+        date: 'Oct. 2022',
+        title: 'The Beginning',
+        description: 'The Digital Shotclock concept is conceived'
     },
     {
-        title: "Oct. 2022",
-        cardTitle: "The NCDA",
-        cardDetailedText: "The NCDA is a nonprofit dodgeball league for college students specializing in the 8.5in pinch format. In dodgeball 2 teams go head-to-head with the goal of eliminating their opponent, similar to basketball there is a shotclock to keep the game moving. But unlike basketball each team has its own clock running asynchronously, each managed by a referee nicknamed shotclocker who is manually counting. Obviously, this creates issues because no two people count at the same pace meaning one side might be throwing more or less than the other. Furthermore, dodgeball is a high-intensity sport and a shotclocker might forget the count whenever the game gets chaotic. This is what inspired the creation of digital computer-controlled shotclocks to make the shotclockers job easier and less stressful.",
-        media: {
-            type: "IMAGE",
-            source: {
-                url: "/timeline-pic.jpg"
-            }
-        }
+        date: 'April 2023',
+        title: 'Prototype Demo',
+        description: 'Shotclock prototype demoed at 2023 NCDA Nationals at Ohio University'
+    },
+    {
+        date: 'May 2023',
+        title: 'DSS',
+        description: 'Digital Sports Solutions LLC is founded'
+    },
+    {
+        date: 'June - November 2023',
+        title: 'V2 Demo',
+        description: 'Shotclock and Gameclock box (Generation 2) demoed at various NDA/NCDA events'
+    },
+    {
+        date: 'December 2023',
+        title: 'Web App',
+        description: 'Web Application concept is conceived'
+    },
+    {
+        date: 'April 2024',
+        title: 'NCDA Nationals Demo',
+        description: 'Generation 2 Game Manager Box and Web Application demoed at 2024 NCDA Nationals.'
+    },
+    {
+        date: 'May 2024',
+        title: 'Now',
+        description: 'Total ecosystem begins development'
     },
 ];
 
 const Timeline = () => {
+    const [selected, setSelected] = useState<number>(-1);
+    const eventRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    const index = eventRefs.current.indexOf(entry.target as HTMLDivElement);
+
+                    if (entry.isIntersecting && index !== -1) {
+                        // Update the selected index when the entry comes into view
+                        setSelected(index);
+                        entry.target.classList.add('slide-in');
+                    }
+                });
+            },
+            { threshold: 1 } // Trigger when 100% of the element is visible
+        );
+
+        eventRefs.current.forEach((event) => {
+            if (event) {
+                observer.observe(event);
+            }
+        });
+
+        return () => {
+            eventRefs.current.forEach((event) => {
+                if (event) {
+                    observer.unobserve(event);
+                }
+            });
+        };
+    }, []);
+
+    // TODO implement embedded media in the timeline events
+
     return (
-        <div style={{ width: '100%' }}>
-            <Chrono
-                items={items}
-                mode="VERTICAL_ALTERNATING"
-                allowDynamicUpdate={true}
-                disableToolbar={true}
-                timelinePointDimension={32}
-                lineWidth={10}
-                classNames={{
-                    card: 'my-card',
-                    cardMedia: 'my-card-media',
-                    cardSubTitle: 'my-card-subtitle',
-                    cardText: 'my-card-text',
-                    cardTitle: 'my-card-title',
-                    controls: 'my-controls',
-                    title: 'my-title',
-                }}
-                theme={{
-                    primary: 'var(--dss-gray)',
-                    secondary: 'var(--dss-gray)',
-                    cardBgColor: 'white',
-                    titleColor: 'var(--dss-gray)',
-                    titleColorActive: 'var(--dss-orange)',
-                }}
-            />
+        <div className="Timeline column">
+            {events.map((event, index) => (
+                <div
+                    key={index}
+                    className={`row entry${index % 2 === 0 ? ' even' : ' odd'}${index === selected ? ' selected' : ''}`}
+                >
+                    <div className="date-box">
+                        {event.date}
+                    </div>
+
+                    <img className="indicator" src="/DSS_LogoMark_FullColor.svg" />
+
+                    <div
+                        ref={(el) => (eventRefs.current[index] = el)}
+                        className={`event-box`}
+                    >
+                        <div className="event column">
+                            <h3>{event.title}</h3>
+                            <p>{event.description}</p>
+                        </div>
+                    </div>
+                </div>
+            ))}
+            <div className="line" />
         </div>
     );
 };

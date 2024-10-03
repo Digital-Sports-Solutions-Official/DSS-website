@@ -1,12 +1,27 @@
 /* Noah Klein */
 
 
-.CLKRLanding .row {
+.TinyLeagueLanding .row {
     max-width: 70rem;
     padding: 0 10rem;
     gap: 2rem;
 }
 
-.CLKRLanding p {
+.TinyLeagueLanding p {
     font-size: 1.25rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: flex-start;
+    /* Aligns items at the start */
+    flex-wrap: wrap;
+    /* Allows wrapping if necessary */
+}
+
+
+.TinyLeagueLanding img {
+    height: 44px;
+    /* Match height to the font size */
+    width: auto;
 }
