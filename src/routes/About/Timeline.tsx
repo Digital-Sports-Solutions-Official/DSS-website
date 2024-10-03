@@ -22,7 +22,7 @@ const Timeline = () => {
                     }
                 });
             },
-            { threshold: 1 } // Trigger when 100% of the element is visible
+            { threshold: 0.75 } // Trigger when 100% of the element is visible
         );
 
         eventRefs.current.forEach((event) => {
@@ -61,6 +61,7 @@ const Timeline = () => {
                     >
                         <div className="event column">
                             <h3>{event.title}</h3>
+                            {event.embed && event.embed}
                             <p>{event.description}</p>
                         </div>
                     </div>

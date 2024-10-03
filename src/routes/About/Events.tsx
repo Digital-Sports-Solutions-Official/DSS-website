@@ -39,9 +39,10 @@ export const events: Array<Event> = [
         date: 'April 2024',
         title: 'NCDA Nationals Demo',
         description: 'Generation 2 Game Manager Box and Web Application demoed at 2024 NCDA Nationals.',
-        embed: <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <InstagramEmbed url="https://www.instagram.com/p/CUbHfhpswxt/" width={328} />
-        </div>,
+        embed:
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <InstagramEmbed url="https://www.instagram.com/p/C5qUbMcgfZ2/" width={"100%"} />
+            </div>,
     },
     {
         date: 'May 2024',
