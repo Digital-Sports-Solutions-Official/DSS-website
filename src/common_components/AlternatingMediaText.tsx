@@ -30,16 +30,16 @@ const AlternatingMediaText = ({ entries }: AlternatingMediaTextProps) => {
             {Array.from(entries.entries()).map(([index, entry]) => (
                 <a className="entry" href={entry.href} target='_blank'>
                     <div className='row' style={{ flexDirection: (isEven(index) ? 'row' : 'row-reverse') }}>
-                        <img src={entry.imgURL} />
+                        <div className='title' style={getTitlePosition(index)}>
+                            <img src={entry.imgURL} />
+                            <h3>{entry.title}</h3>
+                        </div>
                         <p>{entry.description}</p>
                     </div>
-                    <div className='title' style={getTitlePosition(index)}>
-                        {/* TODO make title a label */}
-                        <h3>{entry.title}</h3>
-                    </div>
                 </a>
-            ))}
-        </div>
+            ))
+            }
+        </div >
     )
 }
 

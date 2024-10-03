@@ -1,1 +1,5 @@
 /* Noah Klein */
+
+.AlternatingMediaText .entry {
+    box-shadow: 0 0 15px var(--dss-orange);
+}

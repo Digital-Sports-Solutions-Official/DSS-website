@@ -70,6 +70,7 @@
     animation-delay: 6.5s;
 }
 
+/* ! Do NOT rename this */
 @keyframes shine {
     0% {
         background-position: 150% 0%;

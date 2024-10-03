@@ -28,15 +28,23 @@ textarea {
 
 #error-page {
   margin: 0;
+  padding: 1rem 2rem;
   position: absolute;
   top: 20%;
+  left: 50%;
   -ms-transform: translateY(-20%);
   transform: translateY(-20%);
+
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  color: var(--dss-gray);
+  width: fit-content;
+  border-radius: 0.5rem;
+
+  color: var(--dss-black);
+  background-color: var(--dss-gray);
 }

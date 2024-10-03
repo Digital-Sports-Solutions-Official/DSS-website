@@ -5,7 +5,6 @@ import './Landing.css'
 const Landing = ({ }) => {
     return (
         <div className="Landing">
-            {/* TODO add sheen to hardware software sports */}
             <div className="column slogan-holder">
                 <div>Hardware</div>
                 <div>Software</div>

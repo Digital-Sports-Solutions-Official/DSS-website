@@ -78,4 +78,6 @@ const ProductCarousel: React.FC = () => {
     );
 };
 
+// TODO make it more apparent that this carousel moves, auto rotate probably
+
 export default ProductCarousel;
