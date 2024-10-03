@@ -9,6 +9,7 @@ const About = () => {
         <div className="About">
             <NavBar />
             <Timeline />
+            {/* TODO Add an an about section for the three boys */}
             <Footer />
         </div>
     );

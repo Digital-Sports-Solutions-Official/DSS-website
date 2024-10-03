@@ -14,8 +14,6 @@ const Home = () => {
             <Landing />
             <ProductCarousel />
             <Partners />
-            {/* //TODO I don't even think this should be a button */}
-            {/* <ContactButton href="/contact" /> */}
             <Footer />
         </div>
     );

@@ -13,6 +13,7 @@
 
 .Footer .logo {
     height: 4rem;
+    /* This is dumb but the white combination mark looks weird */
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(115deg) brightness(102%) contrast(103%);
     margin-top: 1.3em;
 }
