@@ -19,7 +19,8 @@ const partnerArray: Array<Partner> = [
 const Partners = ({ }) => {
     return (
         <div className="Partners">
-            <h1>Partners</h1>
+            <h1>Proudly Partnered with the NDA</h1>
+            
             <AlternatingMediaText
                 entries={partnerArray}
             />

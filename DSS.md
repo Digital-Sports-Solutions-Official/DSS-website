@@ -28,3 +28,6 @@ Built to be functional and reactive for devices with a screen-width of at least 
 ## Timeline ideas
 - Highlighted events should slightly grow, icon should turn black and grow slightly as well
 - Just make the line one long thing and the middle section can be only the icon
+
+
+TODO make the funny logomark lines that Andrew is talking

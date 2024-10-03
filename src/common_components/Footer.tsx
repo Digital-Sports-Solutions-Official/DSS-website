@@ -21,19 +21,7 @@ const Footer = () => {
                     <p><a href="https://www.linkedin.com/company/digitalsportssolutions/" target='_blank'>LinkedIn</a></p>
                 </div>
 
-                <div className="footer-section">
-                    <h4>Design Services</h4>
-                    <p>Pizza Pizza Design Services GmbH</p>
-                    <p>Dresdener Str. 22</p>
-                    <p>10999 Berlin, Germany</p>
-                </div>
-
-                <div className="footer-section">
-                    <h4>Ventures</h4>
-                    <p>Pizza Pizza Ventures GmbH</p>
-                    <p>Dresdener Str. 22</p>
-                    <p>10999 Berlin, Germany</p>
-                </div>
+                {/* TODO Make footer sections row elements and seperate everything except for the two emails */}
             </div>
 
             <div className="footer-blurb">

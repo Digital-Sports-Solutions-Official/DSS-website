@@ -14,7 +14,7 @@ const ecosystem: Array<MediaTextEntry> = [
 const Ecosystem = ({ }) => {
     return (
         <div className="Ecosystem">
-            <h1>The tinyLeague ecosystem</h1>
+            <h1>Our Ecosystem</h1>
             <AlternatingMediaText entries={ecosystem} />
         </div>
     )

@@ -44,6 +44,7 @@
     margin-bottom: 0rem;
     font-size: 1rem;
     color: var(--dss-orange);
+    transition: font-weight 0.5s ease-in-out, font-size 0.5s ease-in-out, margin-top 0.5s linear;
 }
 
 .carousel .product .description {
@@ -59,6 +60,13 @@
 .carousel .center-product .description {
     opacity: 1;
     overflow-wrap: break-word;
+}
+
+.carousel .center-product .name {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    /* Todo make this change smoothly */
 }
 
 
