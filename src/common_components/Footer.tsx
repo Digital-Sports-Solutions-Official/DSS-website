@@ -26,7 +26,9 @@ const Footer = () => {
                     <a href="/error" target='_blank'> <FaFacebook size={'2rem'} /> </a>
                 </div>
 
-                <img src="DSS_CombinationMark_FullColor.svg" className="logo" />
+                <div className="footer-section right">
+                    <img src="DSS_CombinationMark_FullColor.svg" className="logo" />
+                </div>
             </div>
 
             <div className="footer-blurb">

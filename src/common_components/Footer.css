@@ -12,6 +12,7 @@
 }
 
 .Footer .logo {
+    position: relative;
     height: 4rem;
     /* This is dumb but the white combination mark looks weird */
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(115deg) brightness(102%) contrast(103%);
@@ -24,7 +25,6 @@
 
 .footer-content {
     display: flex;
-    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
     text-align: left;
@@ -32,7 +32,13 @@
 }
 
 .footer-section {
-    max-width: fit-content;
+    flex: 1;
+    max-width: none;
+}
+
+.Footer .footer-section.right {
+    display: inline-flex;
+    justify-content: right;
 }
 
 
@@ -41,7 +47,7 @@
     margin-bottom: 10px;
 }
 
-.footer-section.centered h4 {
+.footer-section.centered {
     text-align: center;
 }
 

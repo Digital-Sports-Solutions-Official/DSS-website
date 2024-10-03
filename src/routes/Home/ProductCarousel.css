@@ -1,7 +1,5 @@
 /* Noah Klein */
 
-/* TODO add slight tilt to left and right carousel items */
-
 .ProductCarousel {
     width: 100%;
     margin: auto;
@@ -66,7 +64,6 @@
     font-weight: 700;
     font-size: 1.25rem;
     margin-top: 1rem;
-    /* Todo make this change smoothly */
 }
 
 

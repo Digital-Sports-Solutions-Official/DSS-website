@@ -1,49 +1,9 @@
+/* Noah Klein */
+
 import { useState, useEffect, useRef } from 'react';
+import { events } from './Events'
 import './Timeline.css';
 
-interface Event {
-    date: string;
-    title: string;
-    description: string;
-}
-
-const events: Array<Event> = [
-    {
-        date: 'Oct. 2022',
-        title: 'The Beginning',
-        description: 'The Digital Shotclock concept is conceived'
-    },
-    {
-        date: 'April 2023',
-        title: 'Prototype Demo',
-        description: 'Shotclock prototype demoed at 2023 NCDA Nationals at Ohio University'
-    },
-    {
-        date: 'May 2023',
-        title: 'DSS',
-        description: 'Digital Sports Solutions LLC is founded'
-    },
-    {
-        date: 'June - November 2023',
-        title: 'V2 Demo',
-        description: 'Shotclock and Gameclock box (Generation 2) demoed at various NDA/NCDA events'
-    },
-    {
-        date: 'December 2023',
-        title: 'Web App',
-        description: 'Web Application concept is conceived'
-    },
-    {
-        date: 'April 2024',
-        title: 'NCDA Nationals Demo',
-        description: 'Generation 2 Game Manager Box and Web Application demoed at 2024 NCDA Nationals.'
-    },
-    {
-        date: 'May 2024',
-        title: 'Now',
-        description: 'Total ecosystem begins development'
-    },
-];
 
 const Timeline = () => {
     const [selected, setSelected] = useState<number>(-1);
