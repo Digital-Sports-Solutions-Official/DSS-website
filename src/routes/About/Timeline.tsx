@@ -9,8 +9,7 @@ const Timeline = () => {
     const [selected, setSelected] = useState<number>(-1);
     const eventRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-    // TODO make timeline actually work on mobile
-
+    /* This effect updates selected based on the div most recently scrolled into view */
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -24,7 +23,7 @@ const Timeline = () => {
                     }
                 });
             },
-            { threshold: 0.75 } // Trigger when 100% of the element is visible
+            { threshold: 0.75 } // Trigger when 75% of the element is visible
         );
 
         eventRefs.current.forEach((event) => {
@@ -42,6 +41,7 @@ const Timeline = () => {
         };
     }, []);
 
+
     return (
         <div className="Timeline column">
             {events.map((event, index) => (
@@ -58,7 +58,7 @@ const Timeline = () => {
 
                     <div
                         ref={(el) => (eventRefs.current[index] = el)}
-                        className={`event-box`}
+                        className={`event-rails`}
                     >
                         <div className="event column">
                             <span className="mobile-date">{event.date}</span>
