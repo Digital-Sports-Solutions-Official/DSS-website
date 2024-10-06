@@ -51,6 +51,7 @@ const Timeline = () => {
                     key={index}
                     className={`row entry${index % 2 === 0 ? ' even' : ' odd'}${index === selected ? ' selected' : ''}`}
                 >
+                    
                     <div className="date-box">
                         {event.date}
                     </div>
@@ -62,6 +63,7 @@ const Timeline = () => {
                         className={`event-box`}
                     >
                         <div className="event column">
+                            <span className="mobile-date">{event.date}</span>
                             <h3>{event.title}</h3>
                             {event.embed && event.embed}
                             <p>{event.description}</p>

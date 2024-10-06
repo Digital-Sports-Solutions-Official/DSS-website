@@ -15,13 +15,19 @@ export const events: Array<Event> = [
         date: 'Oct. 2022',
         title: 'The Beginning',
         description: 'The Digital Shotclock concept is conceived',
-        embed: <InstagramEmbed url="https://www.instagram.com/p/CkgrDwWAp-5/" width={"75%"} />,
+        embed:
+            <div className="">
+                <InstagramEmbed url="https://www.instagram.com/p/CkgrDwWAp-5/" />  {/*width={"75%"}*/}
+            </div>,
     },
     {
         date: 'April 2023',
         title: 'Prototype Demo',
         description: 'Shotclock prototype demoed at 2023 NCDA Nationals at Ohio University',
-        embed: <YouTubeEmbed url="https://www.youtube.com/watch?v=84cbX2pEHPM" />
+        embed:
+            <div className="embed-container">
+                <YouTubeEmbed url="https://www.youtube.com/watch?v=84cbX2pEHPM" className="youtube-frame" />
+            </div>,
     },
     {
         date: 'May 2023',
