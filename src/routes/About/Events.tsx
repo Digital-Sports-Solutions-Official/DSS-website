@@ -16,7 +16,7 @@ export const events: Array<Event> = [
         title: 'The Beginning',
         description: 'The Digital Shotclock concept is conceived',
         embed:
-            <div className="">
+            <div className="embed-container-insta">
                 <InstagramEmbed url="https://www.instagram.com/p/CkgrDwWAp-5/" />  {/*width={"75%"}*/}
             </div>,
     },
@@ -25,8 +25,8 @@ export const events: Array<Event> = [
         title: 'Prototype Demo',
         description: 'Shotclock prototype demoed at 2023 NCDA Nationals at Ohio University',
         embed:
-            <div className="embed-container">
-                <YouTubeEmbed url="https://www.youtube.com/watch?v=84cbX2pEHPM" className="youtube-frame" />
+            <div className="embed-container-youtube">
+                <YouTubeEmbed url="https://www.youtube.com/watch?v=84cbX2pEHPM" />
             </div>,
     },
     {
@@ -48,7 +48,10 @@ export const events: Array<Event> = [
         date: 'April 2024',
         title: 'NCDA Nationals Demo',
         description: 'Generation 2 Game Manager Box and Web Application demoed at 2024 NCDA Nationals.',
-        embed: <InstagramEmbed url="https://www.instagram.com/p/C5qUbMcgfZ2/" width={"75%"} />,
+        embed:
+            <div className="embed-container-insta">
+                <InstagramEmbed url="https://www.instagram.com/p/C5qUbMcgfZ2/" />
+            </div>,
 
     },
     {

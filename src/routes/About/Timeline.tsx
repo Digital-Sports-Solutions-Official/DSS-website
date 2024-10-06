@@ -42,8 +42,6 @@ const Timeline = () => {
         };
     }, []);
 
-    // TODO implement embedded media in the timeline events
-
     return (
         <div className="Timeline column">
             {events.map((event, index) => (
@@ -51,7 +49,7 @@ const Timeline = () => {
                     key={index}
                     className={`row entry${index % 2 === 0 ? ' even' : ' odd'}${index === selected ? ' selected' : ''}`}
                 >
-                    
+
                     <div className="date-box">
                         {event.date}
                     </div>

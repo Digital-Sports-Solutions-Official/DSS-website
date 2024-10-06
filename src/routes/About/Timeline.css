@@ -7,7 +7,6 @@
 
 .Timeline .entry {
     display: flex;
-    position: relative;
     width: 100%;
     align-items: stretch;
     justify-content: center;
@@ -18,16 +17,23 @@
 }
 
 /* Make embeds responsive by wrapping them in a container */
-.embed-container {
+.Timeline .embed-container-youtube,
+.Timeline .embed-container-insta {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
-    /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
 }
 
-.embed-container iframe {
+.Timeline .embed-container-youtube {
+    padding-bottom: 56.25%;
+}
+
+.Timeline .embed-container-insta {
+    padding-bottom: 120%;
+}
+
+.Timeline .entry iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -39,7 +45,6 @@
 /* Event */
 
 .Timeline .event-box {
-    position: relative;
     display: flex;
     align-items: center;
     width: 37.5%;
@@ -59,7 +64,6 @@
     border-radius: 8px;
     filter: drop-shadow(0 0 1rem var(--dss-orange));
     padding: 0.5rem;
-    text-wrap: pretty;
     transition: filter 0.5s linear;
 }
 
@@ -67,12 +71,10 @@
     filter: drop-shadow(0 0 0.75rem var(--dss-red));
 }
 
-
 /* Date */
 
 .Timeline .date-box {
     display: flex;
-    position: relative;
     align-items: center;
     justify-content: flex-end;
     width: 37.5%;
@@ -92,39 +94,24 @@
     order: 2;
     z-index: 2;
     transition: transform 0.5s ease-in-out, filter 1s ease-in-out;
-    filter: none;
 }
 
 .Timeline .selected .indicator {
     transform: scale(120%);
-    transition: transform 1s ease-in-out, filter 1s ease-in-out;
     filter: brightness(0) invert(1);
 }
 
 .Timeline .line {
     position: absolute;
-    display: block;
     top: 0;
     bottom: 0;
-
     width: 0.75rem;
-
-    /* background: linear-gradient(var(--dss-orange), var(--dss-red), var(--dss-orange)); */
     background: linear-gradient(to bottom, var(--dss-orange) 35%, var(--dss-red) 65%, var(--dss-orange) 75%);
     background-size: 100% 200%;
-
     animation: timeline-shine 5s infinite linear;
 }
 
 /* Animations */
-
-.Timeline .even .slide-in {
-    animation: slideIn 1s forwards;
-}
-
-.Timeline .odd .slide-in {
-    animation: slideIn 1s forwards;
-}
 
 @keyframes timeline-shine {
     0% {
@@ -143,6 +130,12 @@
     }
 }
 
+.Timeline .even .slide-in,
+.Timeline .odd .slide-in {
+    animation: slideIn 1s forwards;
+}
+
+
 /* Stylings for mobile */
 
 .mobile-date {
@@ -150,6 +143,12 @@
 }
 
 @media (max-width: 768px) {
+
+    /* This looks dumb but it's to increase specificity */
+    .Timeline.Timeline {
+        padding: 0;
+        margin: 0;
+    }
 
     /* Hide the date-box on smaller screens */
     .Timeline .date-box {
