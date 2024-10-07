@@ -7,32 +7,33 @@
 }
 
 .Team .member {
+    flex: 1;
+
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: flex-start;
 
     max-width: 22.5rem;
 
     margin: 0 2rem;
-    padding: 2rem;
+    padding: 0 2rem;
     border-radius: 1rem;
-
-    flex: 1;
-}
-
-
-.Team h3 {
-    margin: 0rem;
 }
 
 .Team .image-container {
     position: relative;
     display: inline-block;
-    /* To fit content */
     box-sizing: border-box;
     overflow: hidden;
+}
+
+.Team h3 {
+    padding-left: 1rem;
+    margin: 0;
+    position: absolute;
+    bottom: 87.5%;
+    z-index: 2;
 }
 
 .Team .foreground-image {
@@ -44,7 +45,6 @@
     /* TODO Maybe add this border */
     /* border: 1rem solid var(--dss-gray); */
     border-radius: 2rem;
-    /* Controls the size of the front image */
 }
 
 .Team .background-image {
@@ -59,17 +59,28 @@
     z-index: 0;
     /* Behind the foreground image */
 
-    -moz-user-select: none;
-    -webkit-user-select: none;
     user-select: none;
 }
 
 
 /* Mobile stylings */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .Team .container {
         flex-direction: column;
         align-items: center;
+        gap: 3rem;
+    }
+
+    .Team .member {
+        max-width: 35rem;
+    }
+
+    .Team .foreground-image {
+        max-width: 22.5rem;
+    }
+
+    .Team .member p {
+        max-width: 35rem;
     }
 }
