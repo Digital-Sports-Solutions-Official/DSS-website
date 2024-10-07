@@ -2,6 +2,7 @@
 
 import './Team.css'
 
+// TODO add anchors to member images to a linkedin page or something
 const teamMembers = [
     {
         name: "Adam Flis",
@@ -27,9 +28,16 @@ const Team = () => {
             <div className='container'>
                 {teamMembers.map((member, index) => (
                     <div className='member' key={index}>
+
                         <h3>{member.name}</h3>
-                        <img src={member.picture} />
+
+                        <div className="image-container">
+                            <img src={member.picture} alt="Foreground" className="foreground-image" />
+                            <img src="logos/DSS_LogoMark_FullColor.svg" alt="Background" className="background-image" />
+                        </div>
+
                         <p>{member.description}</p>
+
                     </div>
                 ))}
             </div>

@@ -23,7 +23,7 @@ const Timeline = () => {
                     }
                 });
             },
-            { threshold: 0.75 } // Trigger when 75% of the element is visible
+            { threshold: 0.6 } // Trigger when 60% of the element is visible
         );
 
         eventRefs.current.forEach((event) => {

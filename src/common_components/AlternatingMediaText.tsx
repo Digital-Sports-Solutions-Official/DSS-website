@@ -34,7 +34,14 @@ const AlternatingMediaText = ({ entries }: AlternatingMediaTextProps) => {
                             <img src={entry.imgURL} />
                             <h3>{entry.title}</h3>
                         </div>
-                        <p>{entry.description}</p>
+                        <p>
+                            {entry.description.split('\n').map((line, index) => (
+                                <span key={index}>
+                                    {line}
+                                    <br />
+                                </span>
+                            ))}
+                        </p>
                     </div>
                 </a>
             ))

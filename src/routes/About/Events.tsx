@@ -55,9 +55,4 @@ export const events: Array<Event> = [
             </div>,
 
     },
-    {
-        date: 'May 2024',
-        title: 'Now',
-        description: 'Total ecosystem begins development',
-    },
 ];
