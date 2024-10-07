@@ -101,6 +101,7 @@
 }
 
 .Timeline .cap {
+    /* TODO probably do something with this */
     position: relative;
     margin-top: 2rem;
     width: 227px;

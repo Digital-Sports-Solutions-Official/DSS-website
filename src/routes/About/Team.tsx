@@ -24,13 +24,15 @@ const Team = () => {
     return (
         <div className="Team">
             <h2>Our team</h2>
-            {teamMembers.map((member, index) => (
-                <div className='member' key={index}>
-                    <h2>{member.name}</h2>
-                    <img src={member.picture} />
-                    <p>{member.description}</p>
-                </div>
-            ))}
+            <div className='container'>
+                {teamMembers.map((member, index) => (
+                    <div className='member' key={index}>
+                        <h3>{member.name}</h3>
+                        <img src={member.picture} />
+                        <p>{member.description}</p>
+                    </div>
+                ))}
+            </div>
         </div >
     );
 }

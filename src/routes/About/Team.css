@@ -1,9 +1,10 @@
 /* Noah Klein */
 
-.Team {
-    padding-top: 5rem;
+.Team .container {
     display: flex;
 }
+
+/* TODO style basically like the google slides */
 
 .Team .member {
     display: flex;
@@ -26,6 +27,6 @@
     width: 100%;
 }
 
-.Team h2 {
+.Team h3 {
     margin: 1rem;
 }
