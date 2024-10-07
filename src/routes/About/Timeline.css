@@ -1,8 +1,8 @@
 /* Noah Klein */
 
-.Timeline {
+.Timeline.Timeline {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
 }
 
 .Timeline .entry {

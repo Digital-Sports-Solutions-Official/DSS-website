@@ -2,6 +2,8 @@
 
 .Team .container {
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 /* TODO style basically like the google slides */
@@ -9,13 +11,15 @@
 .Team .member {
     display: flex;
     flex-direction: column;
-    background-color: var(--dss-gray);
-    color: var(--dss-black);
+    /* background-color: var(--dss-gray); */
+    /* color: var(--dss-black); */
 
     align-items: center;
     justify-content: flex-start;
 
-    margin: 2rem;
+    max-width: 22.5rem;
+
+    margin: 0 2rem;
     padding: 2rem;
     border-radius: 1rem;
 
@@ -24,13 +28,15 @@
 
 
 .Team h3 {
-    margin: 1rem;
+    margin: 0rem;
 }
 
 .Team .image-container {
     position: relative;
     display: inline-block;
     /* To fit content */
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .Team .foreground-image {
@@ -38,10 +44,11 @@
     display: block;
     width: 100%;
     z-index: 1;
-    padding: 20% 0;
+    margin: 20% 0;
     /* TODO Figure out why this border isn't visible */
     border-color: var(--dss-gray);
     border-width: 2rem;
+    border-radius: 1rem;
     /* Controls the size of the front image */
 }
 
@@ -56,4 +63,8 @@
     /* Maintain aspect ratio */
     z-index: 0;
     /* Behind the foreground image */
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
