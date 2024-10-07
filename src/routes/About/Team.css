@@ -29,11 +29,16 @@
 }
 
 .Team h3 {
+    transition: color 0.5s ease-in-out;
     padding-left: 1rem;
     margin: 0;
     position: absolute;
     bottom: 87.5%;
     z-index: 2;
+}
+
+.Team .member:hover h3 {
+    color: var(--dss-orange);
 }
 
 .Team .foreground-image {
