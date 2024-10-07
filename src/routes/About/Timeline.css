@@ -43,6 +43,14 @@
     transition: filter 0.5s linear;
 }
 
+.Timeline .entry h3 {
+    color: var(--dss-orange);
+}
+
+.Timeline .entry.selected h3 {
+    color: var(--dss-red);
+}
+
 .Timeline .selected .event {
     filter: drop-shadow(0 0 0.75rem var(--dss-red));
 }
@@ -86,11 +94,20 @@
     top: 0;
     bottom: 0;
     width: 0.75rem;
-    background: linear-gradient(to bottom, var(--dss-orange) 35%, var(--dss-red) 65%, var(--dss-orange) 75%);
+    background: linear-gradient(to bottom, var(--dss-red) 35%, var(--dss-orange) 45%, var(--dss-orange) 65%, var(--dss-red) 75%);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 1) 10rem);
     background-size: 100% 200%;
     animation: timeline-shine 5s infinite linear;
 }
 
+.Timeline .cap {
+    position: relative;
+    margin-top: 2rem;
+    width: 227px;
+    overflow: hidden;
+    z-index: 1;
+    transform: translateY(10px);
+}
 
 /* Embed stylings */
 

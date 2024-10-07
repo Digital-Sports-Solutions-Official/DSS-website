@@ -33,7 +33,7 @@ export const events: Array<Event> = [
         date: 'May 2023',
         title: 'DSS',
         description: 'Digital Sports Solutions LLC is founded',
-        embed: <img src="Old_DSS_logo.png" />
+        embed: <img src="logos/Old_DSS_logo.png" />
     },
     {
         date: 'June - November 2023',

@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-section right">
-                    <img src="DSS_CombinationMark_FullColor.svg" className="logo" />
+                    <img src="logos/DSS_CombinationMark_FullColor.svg" className="logo" />
                 </div>
             </div>
 

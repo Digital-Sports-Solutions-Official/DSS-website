@@ -54,11 +54,11 @@ const Timeline = () => {
                         {event.date}
                     </div>
 
-                    <img className="indicator" src="/DSS_LogoMark_FullColor.svg" />
+                    <img className="indicator" src="logos/DSS_LogoMark_FullColor.svg" />
 
                     <div
                         ref={(el) => (eventRefs.current[index] = el)}
-                        className={`event-rails`}
+                        className="event-rails"
                     >
                         <div className="event column">
                             <span className="mobile-date">{event.date}</span>
@@ -70,6 +70,7 @@ const Timeline = () => {
                 </div>
             ))}
             <div className="line" />
+            <img src="logos\tLMark_White.svg" className="cap" />
         </div>
     );
 };

@@ -25,7 +25,7 @@ const NavBar = () => {
                     </a>
                 ))}
             </div>
-            <img src='/DSS_CombinationMark_FullColor.svg' alt="DSS Logo" />
+            <img src='logos/DSS_CombinationMark_FullColor.svg' alt="DSS Logo" />
         </nav>
     );
 };

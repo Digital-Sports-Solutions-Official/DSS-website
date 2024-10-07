@@ -1,1 +1,31 @@
 /* Noah Klein */
+
+.Team {
+    padding-top: 5rem;
+    display: flex;
+}
+
+.Team .member {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dss-gray);
+    color: var(--dss-black);
+
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    flex: 1;
+}
+
+
+.Team .member img {
+    width: 100%;
+}
+
+.Team h2 {
+    margin: 1rem;
+}

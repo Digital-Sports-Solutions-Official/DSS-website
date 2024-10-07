@@ -34,6 +34,11 @@ const router = createBrowserRouter([
     element: <About />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: "/iphone20",
+    element: <img src="iphone20.png" />,
+    errorElement: <ErrorPage />,
+  },
 ]);
 
 
