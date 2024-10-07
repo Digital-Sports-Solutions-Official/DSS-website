@@ -47,6 +47,10 @@
     filter: drop-shadow(0 0 0.75rem var(--dss-red));
 }
 
+.Timeline .event img {
+    max-width: 50%;
+}
+
 /* Date */
 
 .Timeline .date-box {
@@ -155,6 +159,7 @@
         margin: 0;
     }
 
+
     /* Hide the date-box on smaller screens */
     .Timeline .date-box {
         display: none;
@@ -179,6 +184,10 @@
         order: initial;
         justify-content: center;
         z-index: 2;
+    }
+
+    .Timeline .entry.even .event-rails {
+        justify-content: center;
     }
 
     /* Center the indicator */

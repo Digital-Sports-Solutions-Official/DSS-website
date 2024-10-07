@@ -22,8 +22,7 @@ const Footer = () => {
                     <a href="https://www.instagram.com/digitalsportssolutions?igsh=MTc0YXltdXBmdjFqcw==" target='_blank'><FaInstagram size={'2rem'} /></a>
                     <a href="https://www.linkedin.com/company/digitalsportssolutions/" target='_blank'> <FaLinkedin size={'2rem'} /></a>
                     <a href="https://discord.gg/T2qfkr3JqT" target='_blank'> <FaDiscord size={'2rem'} /> </a>
-                    {/* TODO MAKE THIS POINT TO THE ACTUAL FACEBOOK */}
-                    <a href="/error" target='_blank'> <FaFacebook size={'2rem'} /> </a>
+                    <a href="https://www.facebook.com/people/Digital-Sports-Solutions/61558423260160/" target='_blank'> <FaFacebook size={'2rem'} /> </a>
                 </div>
 
                 <div className="footer-section right">
