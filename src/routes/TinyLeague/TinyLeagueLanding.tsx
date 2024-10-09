@@ -3,7 +3,6 @@
 import './TinyLeagueLanding.css'
 
 const TinyLeagueLanding = ({ }) => {
-    //TODO Make this more reactive
     //TODO Include the tinyLeague mantra
     return (
         <div className="TinyLeagueLanding">

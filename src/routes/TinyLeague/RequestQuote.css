@@ -4,19 +4,8 @@
     padding: 1rem;
 }
 
-.RequestQuote h2 {
-    margin: 1.5rem 1rem;
-    text-align: center;
-    font-size: 1.75rem;
-}
-
-.RequestQuote p {
-    margin: 0;
-    padding: 1rem;
-    font-size: 1.4rem;
-}
-
-.RequestQuote .quote-form {
+.RequestQuote form {
+    display: block;
     max-width: 50rem;
     margin: 0 auto;
     padding: 1.25rem;
@@ -24,13 +13,17 @@
     color: var(--dss-black);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
-.RequestQuote .input-group {
+.RequestQuote label {
+    height: fit-content;
+    display: block;
+    box-sizing: border-box;
     margin-bottom: 1rem;
 }
 
-.RequestQuote .input-field {
+.RequestQuote input {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -39,7 +32,7 @@
     box-sizing: border-box;
 }
 
-.RequestQuote .submit-button {
+.RequestQuote form button {
     width: 100%;
 }
 
@@ -50,4 +43,16 @@
     border: 1px solid #ccc;
     font-size: 16px;
     box-sizing: border-box;
+}
+
+.RequestQuote h2 {
+    margin: 1.5rem 1rem;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.RequestQuote p {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.4rem;
 }
