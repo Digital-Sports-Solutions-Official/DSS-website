@@ -37,6 +37,7 @@
     position: absolute;
     bottom: 87.5%;
     z-index: 2;
+    text-wrap: nowrap;
 }
 
 .Team .title {
@@ -61,16 +62,15 @@
 
 .Team .background-image {
     position: absolute;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 175%;
-    /* Proportional scaling */
-    height: auto;
-    /* Maintain aspect ratio */
-    z-index: 0;
-    /* Behind the foreground image */
 
+    width: 175%;
+    height: auto;
+
+    z-index: 0;
     user-select: none;
 }
 
