@@ -23,15 +23,14 @@ const AlternatingMediaText = ({ entries }: AlternatingMediaTextProps) => {
             {Array.from(entries.entries()).map(([index, entry]) => (
                 <div className={`entry ${isEven(index) ? '' : 'odd'}`}>
                     <a className='title' href={entry.href} target='_blank'>
-                        <img src={entry.imgURL} />
+                        <img src={entry.imgURL} draggable="false" />
                         <h3>{entry.title}</h3>
                     </a>
                     <p>
                         {entry.description.split('\n').map((line, index) => (
-                            <span key={index}>
+                            <p key={index}>
                                 {line}
-                                <br />
-                            </span>
+                            </p>
                         ))}
                     </p>
                 </div>

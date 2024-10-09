@@ -1,11 +1,13 @@
 /* Noah Klein */
 
 import Footer from '../../common_components/Footer';
+import NavBar from '../../common_components/NavBar';
 import './TermsOfService.css';
 
 const TermsOfService = () => {
     return (
         <>
+            <NavBar />
             <div className="TermsOfService">
                 <h1>Terms of Service</h1>
 
@@ -19,7 +21,9 @@ const TermsOfService = () => {
 
                     <h3>User Conduct</h3>
                     <p>When using this website, you agree not to:</p>
-                    <p>- Violate any applicable laws or regulations. - Use the website in any manner that could interfere with other users' access or enjoyment of the site. - Attempt to gain unauthorized access to any portion of the site, its systems, or networks.</p>
+                    <p>- Violate any applicable laws or regulations. </p>
+                    <p>- Use the website in any manner that could interfere with other users' access or enjoyment of the site. </p>
+                    <p>- Attempt to gain unauthorized access to any portion of the site, its systems, or networks.</p>
 
                     <h3>Mailing List Sign-Up</h3>
                     <p>Our website offers users the option to sign up for our mailing list. By signing up, you consent to receive periodic emails from Digital Sports Solutions LLC regarding news, updates, and promotional offers. You can unsubscribe from the mailing list at any time by following the instructions provided in the emails.</p>
@@ -34,11 +38,11 @@ const TermsOfService = () => {
                     <p>Digital Sports Solutions LLC reserves the right to update or modify these Terms of Service at any time without prior notice. By continuing to use the website after changes are posted, you agree to accept the updated terms.</p>
 
                     <h3>Contact Us</h3>
-                    <p>If you have any questions about these Terms of Service, please contact us at contact@digitalsportssolutions.com.</p>
+                    <p>If you have any questions about these Terms of Service, please contact us at <a href="mailto:contact@digitalsportssolutions.com" target='_blank'>contact@digitalsportssolutions.com</a>.</p>
                     <p>By using this website, you acknowledge that you have read and understood these Terms of Service and agree to be bound by them.</p>
 
                 </div>
-            </div>
+            </div >
 
             <Footer />
         </>

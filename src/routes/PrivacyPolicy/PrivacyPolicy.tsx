@@ -1,12 +1,14 @@
 /* Noah Klein */
 
 import Footer from "../../common_components/Footer";
+import NavBar from "../../common_components/NavBar";
 
 import './PrivacyPolicy.css';
 
 const PrivacyPolicy = () => {
     return (
         <>
+            <NavBar />
             <div className="PrivacyPolicy">
 
                 <h1>Privacy Policy</h1>
@@ -29,7 +31,7 @@ const PrivacyPolicy = () => {
                     <p>We reserve the right to update or change this Privacy Policy at any time. Any changes will be reflected on this page, and we encourage you to review this policy periodically.</p>
 
                     <h3>Contact Us</h3>
-                    <p>If you have any questions or concerns about this Privacy Policy, please contact us at contact@digitalsportssolutions.com.</p>
+                    <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:contact@digitalsportssolutions.com" target='_blank'>contact@digitalsportssolutions.com</a>.</p>
                     <p>By using our website, you agree to the terms of this Privacy Policy.</p>
 
                 </div>

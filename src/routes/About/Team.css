@@ -58,6 +58,7 @@
     /* TODO Maybe add this border */
     /* border: 1rem solid var(--dss-gray); */
     border-radius: 2rem;
+    user-select: none;
 }
 
 .Team .background-image {

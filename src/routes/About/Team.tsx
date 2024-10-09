@@ -2,7 +2,15 @@
 
 import './Team.css'
 
-const teamMembers = [
+interface Member {
+    name: string;
+    title: string;
+    href: string;
+    description: string;
+    picture: string;
+}
+
+const teamMembers: Array<Member> = [
     {
         name: "Adam Flis",
         title: "CTO",
@@ -34,17 +42,14 @@ const Team = () => {
                 {teamMembers.map((member, index) => (
                     <div className='member' key={index}>
 
-
-
                         <div className="image-container">
                             <a href={member.href} target='_blank'>
-                                <img src={member.picture} alt="Foreground" className="foreground-image" />
+                                <img src={member.picture} alt="Foreground" className="foreground-image" draggable="false" />
                             </a>
                             <h3 className='name'>{member.name}</h3>
                             <h3 className='title'>{member.title}</h3>
 
-
-                            <img src="logos/DSS_LogoMark_FullColor.svg" alt="Background" className="background-image" />
+                            <img src="logos/DSS_LogoMark_FullColor.svg" alt="Background" className="background-image" draggable="false" />
                         </div>
 
                         <p>{member.description}</p>

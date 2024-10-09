@@ -55,8 +55,6 @@
     max-width: 15rem;
 }
 
-/* TODO This doesn't actually look very good on mobile */
-
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
 

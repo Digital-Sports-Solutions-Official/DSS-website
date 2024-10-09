@@ -83,7 +83,7 @@ const ProductCarousel: React.FC = () => {
                         onClick={() => goToProduct(index)}
                     >
                         <Tilt {...getProductTiltProps(index)}>
-                            <img src={product.imageUrl} alt={product.name} />
+                            <img src={product.imageUrl} alt={product.name} draggable="false" />
                         </Tilt>
                         <p className="name">{product.name}</p>
                         <p className="description">{product.description}</p>
