@@ -1,0 +1,17 @@
+/* Noah Klein */
+
+.TermsOfService {
+    display: grid;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.TermsOfService .container {
+    max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+    .TermsOfService {
+        padding: 1rem;
+    }
+}

@@ -11,6 +11,8 @@ import Home from './routes/Home/Home';
 import TinyLeague from './routes/TinyLeague/TinyLeague';
 import Order from './routes/Order/Order';
 import About from './routes/About/About';
+import PrivacyPolicy from './routes/PrivacyPolicy/PrivacyPolicy';
+import TermsOfService from './routes/TermsOfService/TermsOfService';
 
 
 const router = createBrowserRouter([
@@ -32,6 +34,16 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/terms",
+    element: <TermsOfService />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/privacy",
+    element: <PrivacyPolicy />,
     errorElement: <ErrorPage />,
   },
   {

@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-section right">
-                    <img src="logos/DSS_CombinationMark_FullColor.svg" className="logo" />
+                    <a href="/"><img src="logos/DSS_CombinationMark_FullColor.svg" className="logo" /></a>
                 </div>
             </div>
 
@@ -38,7 +38,7 @@ const Footer = () => {
 
             <div className="footer-bottom">
                 <p>&copy; 2024 Digital Sports Solutions LLC</p>
-                <p><a href="#">Terms of Service</a><span>|</span><a href="#">Privacy Policy</a></p>
+                <p><a href="/terms">Terms of Service</a><span>|</span><a href="/privacy">Privacy Policy</a></p>
             </div>
         </footer>
     )

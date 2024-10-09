@@ -16,7 +16,11 @@
     height: 4rem;
     /* This is dumb but the white combination mark looks weird */
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(115deg) brightness(102%) contrast(103%);
-    margin-top: 1.3em;
+    transition: filter 0.5s ease;
+}
+
+.Footer .logo:hover {
+    filter: brightness(0) saturate(100%) invert(0) sepia(100%) saturate(0%) hue-rotate(115deg) brightness(102%) contrast(103%);
 }
 
 .Footer span {
@@ -57,9 +61,11 @@
 }
 
 .footer-section a {
+    height: fit-content;
+    margin-top: 1.3em;
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 .Footer a:hover {
@@ -101,7 +107,7 @@
 .footer-bottom a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 /* Responsive layout for smaller screens */
