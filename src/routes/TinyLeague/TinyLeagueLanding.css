@@ -21,7 +21,5 @@
 
 
 .TinyLeagueLanding img {
-    height: 44px;
-    /* Match height to the font size */
-    width: auto;
+    width: 10rem;
 }

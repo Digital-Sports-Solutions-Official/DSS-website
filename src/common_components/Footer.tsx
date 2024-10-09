@@ -3,7 +3,6 @@ import { FaInstagram, FaLinkedin, FaDiscord, FaFacebook } from "react-icons/fa";
 
 import './Footer.css';
 
-//TODO add terms of service and privacy policy
 
 const Footer = () => {
     return (

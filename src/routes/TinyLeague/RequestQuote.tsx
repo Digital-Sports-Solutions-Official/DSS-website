@@ -3,7 +3,6 @@
 import './RequestQuote.css'
 
 const RequestQuote = ({ }) => {
-    // TODO Make this mobile friendly
     return (
         <div className='RequestQuote'>
             <h2>Wondering if we can meet the needs of your league? Contact us!</h2>

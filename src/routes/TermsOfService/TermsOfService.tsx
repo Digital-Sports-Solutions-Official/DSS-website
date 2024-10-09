@@ -39,7 +39,10 @@ const TermsOfService = () => {
 
                     <h3>Contact Us</h3>
                     <p>If you have any questions about these Terms of Service, please contact us at <a href="mailto:contact@digitalsportssolutions.com" target='_blank'>contact@digitalsportssolutions.com</a>.</p>
-                    <p>By using this website, you acknowledge that you have read and understood these Terms of Service and agree to be bound by them.</p>
+
+                    <br />
+
+                    <h3 className='binder'>By using this website, you acknowledge that you have read and understood these Terms of Service and agree to be bound by them.</h3>
 
                 </div>
             </div >

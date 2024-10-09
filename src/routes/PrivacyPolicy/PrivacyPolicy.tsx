@@ -32,7 +32,10 @@ const PrivacyPolicy = () => {
 
                     <h3>Contact Us</h3>
                     <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:contact@digitalsportssolutions.com" target='_blank'>contact@digitalsportssolutions.com</a>.</p>
-                    <p>By using our website, you agree to the terms of this Privacy Policy.</p>
+
+                    <br />
+
+                    <h3 className="binder">By using our website, you agree to the terms of this Privacy Policy.</h3>
 
                 </div>
             </div>

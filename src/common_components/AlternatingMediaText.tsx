@@ -21,18 +21,19 @@ const AlternatingMediaText = ({ entries }: AlternatingMediaTextProps) => {
     return (
         <div className='AlternatingMediaText column'>
             {Array.from(entries.entries()).map(([index, entry]) => (
-                <div className={`entry ${isEven(index) ? '' : 'odd'}`}>
+                <div className={`entry ${isEven(index) ? '' : 'odd'}`} key={index}>
                     <a className='title' href={entry.href} target='_blank'>
                         <img src={entry.imgURL} draggable="false" />
                         <h3>{entry.title}</h3>
                     </a>
-                    <p>
+
+                    <div>
                         {entry.description.split('\n').map((line, index) => (
                             <p key={index}>
                                 {line}
                             </p>
                         ))}
-                    </p>
+                    </div>
                 </div>
             ))
             }

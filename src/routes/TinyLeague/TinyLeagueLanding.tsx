@@ -7,12 +7,10 @@ const TinyLeagueLanding = ({ }) => {
     //TODO Include the tinyLeague mantra
     return (
         <div className="TinyLeagueLanding">
-            {/* <div className="header-container">
-                <h1>Introducing tinyLeague</h1>
-                <img src="DSS_LogoMark_FullColor.svg" alt="Logo" />
-            </div> */}
-            <h1>Introducing tinyLeague</h1>
+            <h1>Introducing tinyLeague™</h1>
             <div className="row">
+
+                <img src='logos/tLMark_White.svg' />
 
                 <p>
                     tinyLeague is the flagship product line from Digital Sports Solutions changing the way sport leagues operate from their core.

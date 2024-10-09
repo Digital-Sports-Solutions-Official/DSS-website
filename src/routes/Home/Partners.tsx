@@ -11,6 +11,7 @@ interface Partner {
 }
 
 const partnerArray: Array<Partner> = [
+    // TODO add hyperlinks to this text
     {
         title: "",
         imgURL: 'logos/partners/NDA-logo.png', // Get a transparent NDA logo

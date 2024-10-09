@@ -55,8 +55,6 @@
     width: 100%;
     z-index: 1;
     margin: 20% 0;
-    /* TODO Maybe add this border */
-    /* border: 1rem solid var(--dss-gray); */
     border-radius: 2rem;
     user-select: none;
 }
