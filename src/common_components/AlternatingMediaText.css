@@ -5,6 +5,17 @@
     padding: 0 5rem;
 }
 
+.AlternatingMediaText .title {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.AlternatingMediaText .entry.odd .title {
+    flex-direction: column;
+    text-align: end;
+}
+
 .AlternatingMediaText a {
     text-decoration: none;
     color: inherit;
@@ -15,12 +26,18 @@
 }
 
 .AlternatingMediaText .entry {
+    display: flex;
+    flex-direction: row;
     padding: 2rem;
     text-wrap: pretty;
     transition: transform 0.3s ease-in-out;
     border-radius: 5px;
     margin: 1rem 0;
     max-width: 80rem;
+}
+
+.AlternatingMediaText .entry.odd {
+    flex-direction: row-reverse;
 }
 
 .AlternatingMediaText .entry .row {
@@ -42,32 +59,29 @@
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
 
-    .AlternatingMediaText #entry.row-entry {
-        flex-direction: column;
-    }
-
     .AlternatingMediaText {
-        padding: 0;
+        text-align: center;
     }
 
     .AlternatingMediaText .entry {
+        flex-direction: column !important;
         padding: 1rem;
     }
 
-    .AlternatingMediaText .entry .row {
+    .AlternatingMediaText .title {
         flex-direction: column;
         align-items: center;
+    }
+
+    .AlternatingMediaText {
+        padding: 0.5rem;
     }
 
     .AlternatingMediaText img {
         max-height: 8rem;
     }
 
-    .AlternatingMediaText h3 {
-        text-align: center;
-    }
-
-    .AlternatingMediaText .entry p {
-        text-align: center;
+    .AlternatingMediaText .entry:hover {
+        transform: none;
     }
 }
