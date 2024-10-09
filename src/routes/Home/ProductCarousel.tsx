@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Tilt, { ReactParallaxTiltProps } from 'react-parallax-tilt';
-import products from '../../products';
+import products from './products';
 
 import './ProductCarousel.css';
 

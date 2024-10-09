@@ -3,3 +3,9 @@
 .AlternatingMediaText .entry {
     box-shadow: 0 0 15px var(--dss-orange);
 }
+
+@media (max-width: 768px) {
+    .AlternatingMediaText .entry {
+        box-shadow: 0 0 0;
+    }
+}

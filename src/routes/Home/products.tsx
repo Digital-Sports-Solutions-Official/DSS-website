@@ -29,5 +29,3 @@ const clkBox: Product = {
 const products: Array<Product> = [dualDigitShotClock, miniGameClock, clkBox, dualDigitShotClock, miniGameClock, clkBox]
 
 export default products;
-
-//TODO make components take products as a prop

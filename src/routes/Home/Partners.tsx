@@ -13,9 +13,9 @@ interface Partner {
 const partnerArray: Array<Partner> = [
     {
         title: "The NDA",
-        imgURL: 'logos/partners/NDA-logo.jpg',
+        imgURL: 'logos/partners/NDA-logo.png', // Get a transparent NDA logo
         href: "https://www.ndadodgeball.com/",
-        description: "The National Dodgeball Association is the home of competitive dodgeball in the United States. Specializing in the 8.5in Pinch format, the NDA offers unmatched excitement and showcases the very best the sport has to offer."
+        description: "The National Dodgeball Association (NDA) is a leading organization dedicated to promoting and governing the sport of dodgeball across the United States. Established with the goal of advancing dodgeball as a recognized and respected sport, the NDA organizes competitive leagues, tournaments, and events for players of all skill levels.\n\nThe NDA provides a structured environment for both recreational and professional players, ensuring consistent rules and fair play.It fosters a sense of community among dodgeball enthusiasts and emphasizes sportsmanship, teamwork, and physical fitness.Through its efforts, the NDA aims to grow the sport's popularity, create opportunities for player development, and establish dodgeball as a mainstream athletic pursuit.\n\nWith a focus on expanding dodgeball's reach and impact, the NDA continues to enhance the sport's visibility and engage with a broad audience, from grassroots players to elite competitors."
     },
     {
         title: "The NCDA",

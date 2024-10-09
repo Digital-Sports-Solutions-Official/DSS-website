@@ -10,7 +10,6 @@ const TinyLeague = () => {
     return (
         <div className="tinyLeague">
             <NavBar />
-            {/* TODO change clkr icon to the tinyleague icon */}
             <TinyLeagueLanding />
             <Ecosystem />
             <RequestQuote />
