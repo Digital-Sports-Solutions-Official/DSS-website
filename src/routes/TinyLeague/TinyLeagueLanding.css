@@ -1,17 +1,26 @@
 /* Noah Klein */
 
+.TinyLeagueLanding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
 
-.TinyLeagueLanding .row {
+.TinyLeagueLanding .container {
+    display: flex;
     max-width: 70rem;
-    padding: 0 10rem;
     gap: 2rem;
+    align-items: center;
 }
 
 .TinyLeagueLanding p {
     font-size: 1.25rem;
 }
 
-.header-container {
+.TinyLeagueLanding .header-container {
     display: flex;
     align-items: flex-start;
     /* Aligns items at the start */
@@ -22,4 +31,14 @@
 
 .TinyLeagueLanding img {
     width: 10rem;
+}
+
+@media (max-width: 768px) {
+    .TinyLeagueLanding .container{
+        flex-direction: column;
+    }
+
+    .TinyLeagueLanding img{
+        margin-top: 1rem;
+    }
 }

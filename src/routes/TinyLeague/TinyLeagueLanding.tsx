@@ -8,7 +8,7 @@ const TinyLeagueLanding = ({ }) => {
     return (
         <div className="TinyLeagueLanding">
             <h1>Introducing tinyLeague™</h1>
-            <div className="row">
+            <div className="container">
 
                 <img src='logos/tLMark_White.svg' />
 
