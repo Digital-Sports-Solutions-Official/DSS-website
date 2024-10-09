@@ -5,3 +5,11 @@
 .Ecosystem .entry {
     box-shadow: none;
 }
+
+.Ecosystem .AlternatingMediaText{
+    padding: 0 2rem;
+}
+
+.Ecosystem .AlternatingMediaText .entry{
+    max-width: 70rem;
+}

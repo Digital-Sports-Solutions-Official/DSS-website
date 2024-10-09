@@ -5,7 +5,8 @@ import './AlternatingMediaText.css'
 export interface MediaTextEntry {
     title: string;
     href?: string;
-    imgURL: string;
+    imgURL?: string;
+    imgJSX?: JSX.Element;
     descriptionText?: string;
     descriptionJSX?: JSX.Element;
 }
@@ -25,6 +26,7 @@ const AlternatingMediaText = ({ entries }: AlternatingMediaTextProps) => {
                 <div className={`entry ${isEven(index) ? '' : 'odd'}`} key={index}>
                     <a className='title' href={entry.href} target='_blank'>
                         <img src={entry.imgURL} draggable="false" />
+                        {entry.imgJSX && entry.imgJSX}
                         <h3>{entry.title}</h3>
                     </a>
 
