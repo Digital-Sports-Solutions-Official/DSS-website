@@ -9,18 +9,18 @@ const ecosystem: Array<MediaTextEntry> = [
         title: "Hardware",
         imgURL: 'hardware.png',
         href: "https://ncdadodgeball.com/",
-        description: "An innovative suite of IOT enabled modular game units that enable players to build customized scoreboards that fit their needs regardless of their sport."
+        descriptionText: "An innovative suite of IOT enabled modular game units that enable players to build customized scoreboards that fit their needs regardless of their sport."
     },
     {
         title: "Software",
         imgURL: 'software.webp',
-        description: "An all-in-one mobile and web-based application that connects players, coaches, and spectators to live game statistics, updates, and information."
+        descriptionText: "An all-in-one mobile and web-based application that connects players, coaches, and spectators to live game statistics, updates, and information."
     },
     {
         title: "Database",
         imgURL: 'database.png',
         href: "https://ncdadodgeball.com/",
-        description: "The tinyLeague™ database supports countless integrations between the hardware and software, as well as providing APIs for extensibility across other platforms."
+        descriptionText: "The tinyLeague™ database supports countless integrations between the hardware and software, as well as providing APIs for extensibility across other platforms."
     },
 ]
 

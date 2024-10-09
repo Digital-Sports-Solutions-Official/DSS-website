@@ -54,6 +54,11 @@
     max-width: 15rem;
 }
 
+.AlternatingMediaText a{
+    color: var(--dss-orange);
+}
+
+
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
 

@@ -6,7 +6,8 @@ export interface MediaTextEntry {
     title: string;
     href?: string;
     imgURL: string;
-    description: string;
+    descriptionText?: string;
+    descriptionJSX?: JSX.Element;
 }
 
 interface AlternatingMediaTextProps {
@@ -28,11 +29,12 @@ const AlternatingMediaText = ({ entries }: AlternatingMediaTextProps) => {
                     </a>
 
                     <div>
-                        {entry.description.split('\n').map((line, index) => (
+                        {entry.descriptionText?.split('\n').map((line, index) => (
                             <p key={index}>
                                 {line}
                             </p>
                         ))}
+                        {entry.descriptionJSX && entry.descriptionJSX}
                     </div>
                 </div>
             ))
