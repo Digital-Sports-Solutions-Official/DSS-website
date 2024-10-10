@@ -105,6 +105,11 @@
         padding: 0 2rem;
     }
 
+    .Landing .slogan-holder{
+        line-height: clamp(3rem, 15vw, 9rem);
+        font-size: clamp(3rem, 15vw, 8rem);
+    }
+
     .Landing .slogan-holder p {
         font-weight: 600;
     }

@@ -4,7 +4,6 @@ import './PreOrder.css';
 
 const PreOrder = () => {
     return (
-        // TODO Make this container shine like the header text
         // TODO point the formspree to DSS email 
         <div className="PreOrder">
             <h1>Pre-Orders Coming Soon!</h1>
