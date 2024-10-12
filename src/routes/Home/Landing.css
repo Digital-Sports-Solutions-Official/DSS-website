@@ -106,8 +106,8 @@
     }
 
     .Landing .slogan-holder{
-        line-height: clamp(3rem, 15vw, 9rem);
-        font-size: clamp(3rem, 15vw, 8rem);
+        line-height: clamp(3rem, 16.5vw, 9rem);
+        font-size: clamp(3rem, 16.5vw, 8rem);
     }
 
     .Landing .slogan-holder p {

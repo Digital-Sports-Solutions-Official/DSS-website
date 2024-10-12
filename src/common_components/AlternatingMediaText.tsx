@@ -6,9 +6,8 @@ export interface MediaTextEntry {
     title: string;
     href?: string;
     imgURL?: string;
-    imgJSX?: JSX.Element;
-    descriptionText?: string;
-    descriptionJSX?: JSX.Element;
+    imgElement?: JSX.Element;
+    descriptionElement?: JSX.Element;
 }
 
 interface AlternatingMediaTextProps {
@@ -26,17 +25,12 @@ const AlternatingMediaText = ({ entries }: AlternatingMediaTextProps) => {
                 <div className={`entry ${isEven(index) ? '' : 'odd'}`} key={index}>
                     <a className='title' href={entry.href} target='_blank'>
                         <img src={entry.imgURL} draggable="false" />
-                        {entry.imgJSX && entry.imgJSX}
+                        {entry.imgElement && entry.imgElement}
                         <h3>{entry.title}</h3>
                     </a>
 
                     <div>
-                        {entry.descriptionText?.split('\n').map((line, index) => (
-                            <p key={index}>
-                                {line}
-                            </p>
-                        ))}
-                        {entry.descriptionJSX && entry.descriptionJSX}
+                        {entry.descriptionElement && entry.descriptionElement}
                     </div>
                 </div>
             ))

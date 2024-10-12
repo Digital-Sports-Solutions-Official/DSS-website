@@ -21,7 +21,7 @@ const miniGameClock: Product = {
 const clkBox: Product = {
     name: 'clkBox',
     imageUrl: '/clkBox.PNG',
-    description: 'Get your clkr hardware modules online with the clkBox. Effortlessly connect and manage your devices for quick, accurate match data presentation, with real-time data and statistics uploaded to your league\'s database. Easily customize and update your Clkr module layout directly on the device, allowing you to run your events smoothly and confidently every time.',
+    description: 'Get your tinyLeague hardware modules online with the clkBox. Effortlessly connect and manage your devices for quick, accurate match data presentation, with real-time data and statistics uploaded to your league\'s database. Easily customize and update your tinyLeague module layout directly on the device, allowing you to run your events smoothly and confidently every time.',
 }
 
 

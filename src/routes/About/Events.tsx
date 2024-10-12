@@ -40,17 +40,17 @@ export const events: Array<Event> = [
     {
         date: 'June - November 2023',
         title: 'Additional Testing & Development',
-        description: 'Over the following few months, Adam worked to further build out the digital shotclocking project. Through his testing and development, Adam began to add on multiple features to the system as feedback was received from teams',
+        description: 'Over the following few months, Adam worked to further build out the digital shotclocking project. Through his testing and development, Adam began to add on multiple features to the system as feedback was received from teams.',
     },
     {
         date: 'December 2023',
         title: 'Web App',
-        description: 'At the beginning of the development phase, Michael joined the team to spearhead the creation of a web application and user-friendly interface. His goal was to transform DSS’s existing hardware-based systems into a streamlined digital solution. By leveraging modern web technologies, Michael focused on enhancing the accessibility and functionality of the platform, ensuring that users could efficiently manage sports data and league operations online. The project evolved from a basic hardware solution into a comprehensive digital tool, designed to handle everything from team management and scheduling to real- time game statistics and performance analytics.The transition to this innovative approach not only improved the ease of use for clients but also positioned DSS as a leader in sports data management, offering a platform that integrates seamlessly with their hardware while expanding its capabilities.',
+        description: 'At the beginning of the development phase, Michael joined the team to spearhead the creation of a web application and user-friendly interface. His goal was to transform DSS\'s existing hardware-based systems into a streamlined digital solution. By leveraging modern web technologies, Michael focused on enhancing the accessibility and functionality of the platform, ensuring that users could efficiently manage sports data and league operations online. The project evolved from a basic hardware solution into a comprehensive digital tool, designed to handle everything from team management and scheduling to real- time game statistics and performance analytics. The transition to this innovative approach not only improved the ease of use for clients but also positioned DSS as a leader in sports data management, offering a platform that integrates seamlessly with their hardware while expanding its capabilities.',
     },
     {
         date: 'April 2024',
         title: '2024 NCDA Nationals Demo',
-        description: 'Following up on their previous success, the DSS team demoed their second prototype at NCDA Nationals 2024 hosted at The Ohio State University. This test expanded upon last year’s by including the hardware improvements and newly created web app. This test highlighted the additional functionality that an expanded ecosystem could provide, along with making match results more accessible to players and fans.',
+        description: 'Following up on their previous success, the DSS team demoed their second prototype at NCDA Nationals 2024 hosted at The Ohio State University. This test expanded upon last year\'s by including the hardware improvements and newly created web app. This test highlighted the additional functionality that an expanded ecosystem could provide, along with making match results more accessible to players and fans.',
         embed:
             <div className="embed-container-insta">
                 <InstagramEmbed url="https://www.instagram.com/p/C5qUbMcgfZ2/" />

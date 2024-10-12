@@ -1,8 +1,12 @@
 /* Noah Klein */
 
-.Timeline.Timeline {
+.Timeline {
     position: relative;
     margin-bottom: 10rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
 
 .Timeline .entry {
