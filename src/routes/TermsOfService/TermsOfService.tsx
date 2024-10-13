@@ -42,7 +42,7 @@ const TermsOfService = () => {
 
                     <br />
 
-                    <h3 className='binder'>By using this website, you acknowledge that you have read and understood these Terms of Service and agree to be bound by them.</h3>
+                    <h3 className='binding'>By using this website, you acknowledge that you have read and understood these Terms of Service and agree to be bound by them.</h3>
 
                 </div>
             </div >

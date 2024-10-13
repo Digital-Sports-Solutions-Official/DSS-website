@@ -35,7 +35,7 @@ const PrivacyPolicy = () => {
 
                     <br />
 
-                    <h3 className="binder">By using our website, you agree to the terms of this Privacy Policy.</h3>
+                    <h3 className="binding">By using our website, you agree to the terms of this Privacy Policy.</h3>
 
                 </div>
             </div>
