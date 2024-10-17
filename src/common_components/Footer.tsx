@@ -31,12 +31,16 @@ const Footer = () => {
 
             <div className="footer-blurb">
                 <p>
-                    This website is for informational purposes only and does not constitute legal advice. All product names, logos, and brands are property of their respective owners. Use of these names, logos, and brands does not imply endorsement. Website designed and built by <a href="https://www.linkedin.com/in/noah-klein-5a215a251/" target="_blank">Noah Klein</a>.
+                    This website is for informational purposes only and does not constitute legal advice. All product names, logos, and brands are property of their respective owners. Use of these names, logos, and brands does not imply endorsement.
                 </p>
             </div>
 
             <div className="footer-bottom">
-                <p>&copy; 2024 Digital Sports Solutions LLC</p>
+                <p>
+                    &copy; 2024 Digital Sports Solutions LLC<br />
+                    Website designed and built by <a href="https://www.linkedin.com/in/noah-klein-5a215a251/" target="_blank">Noah Klein</a><br />
+                    Graphic elements designed by <a href="https://www.mattmk.com/" target="_blank">Matt Kerekanich</a>
+                </p>
                 <p><a href="/terms">Terms of Service</a><span>|</span><a href="/privacy">Privacy Policy</a></p>
             </div>
         </footer>

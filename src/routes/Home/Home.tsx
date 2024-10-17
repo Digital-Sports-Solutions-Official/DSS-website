@@ -8,6 +8,7 @@ import ProductCarousel from './ProductCarousel';
 //import ContactButton from '../../common_components/ContactButton';
 
 const Home = () => {
+    // TODO maybe make the scrollbar look nicer
     return (
         <div className="Home">
             <NavBar />

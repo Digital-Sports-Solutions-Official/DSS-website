@@ -71,6 +71,7 @@ const Timeline = () => {
             ))}
             <div className="line" />
             <img src="logos\tLMark_White.svg" className="cap" />
+            <p className="debut">The DSS Team will debut tinyLeague in 2025</p>
         </div>
     );
 };

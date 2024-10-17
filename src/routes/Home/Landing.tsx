@@ -12,7 +12,7 @@ const Landing = ({ }) => {
                 <div>Sports</div>
                 <p>Digital Sports Solutions LLC.</p>
             </div>
-
+            {/* TODO Change this image */}
             <div className="column image-paragraph">
                 <img src='https://computercare.net/wp-content/uploads/2019/08/Blog-Post-Header.png' />
                 <p>

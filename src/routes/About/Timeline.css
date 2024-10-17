@@ -114,6 +114,10 @@
     transform: translateY(10px);
 }
 
+.Timeline .debut {
+    padding-top: 1rem;
+}
+
 /* Embed stylings */
 
 .Timeline .embed-container-youtube,

@@ -25,6 +25,7 @@ const NavBar = () => {
                     </a>
                 ))}
             </div>
+            {/* TODO Make this a link to home */}
             <img src='logos/DSS_CombinationMark_FullColor.svg' alt="DSS Logo" draggable='false' />
         </nav>
     );

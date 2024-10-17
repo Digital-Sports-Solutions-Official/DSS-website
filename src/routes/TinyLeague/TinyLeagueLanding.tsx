@@ -4,6 +4,9 @@ import './TinyLeagueLanding.css'
 
 const TinyLeagueLanding = ({ }) => {
     //TODO Include the tinyLeague mantra
+
+    // TODO link to the new tinyLeague domain
+    // TODO find the oomph
     return (
         <div className="TinyLeagueLanding">
             <h1>Introducing tinyLeague</h1>

@@ -9,6 +9,7 @@ const Order = () => {
         <div className="Order">
             <NavBar />
             <PreOrder />
+            {/* TODO make footer sticky */}
             <Footer />
         </div>
     );
