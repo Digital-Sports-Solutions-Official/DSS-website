@@ -27,6 +27,8 @@
     /* This filter hack makes it white */
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(115deg) brightness(102%) contrast(103%);
     transition: filter 0.5s ease;
+
+    user-select: none;
 }
 
 .Footer .logo:hover {

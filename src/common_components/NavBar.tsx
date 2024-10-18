@@ -14,7 +14,7 @@ const NavBar = () => {
 
     return (
         <nav className={'NavBar'}>
-            <div className='row a-holder'>
+            <div className='anchors'>
                 {Array.from(navBarMap.entries()).map(([anchorText, href]) => (
                     <a
                         href={href}
@@ -26,7 +26,9 @@ const NavBar = () => {
                 ))}
             </div>
             {/* TODO Make this a link to home */}
-            <img src='logos/DSS_CombinationMark_FullColor.svg' alt="DSS Logo" draggable='false' />
+            <a className='logo-anchor' href='/'>
+                <img src='logos/DSS_CombinationMark_FullColor.svg' alt="DSS Logo" draggable='false' />
+            </a>
         </nav>
     );
 };

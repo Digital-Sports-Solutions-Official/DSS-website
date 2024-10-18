@@ -26,14 +26,16 @@ const Timeline = () => {
             { threshold: 0.6 } // Trigger when 60% of the element is visible
         );
 
-        eventRefs.current.forEach((event) => {
+        const currentEventRefs = eventRefs.current;
+
+        currentEventRefs.forEach((event) => {
             if (event) {
                 observer.observe(event);
             }
         });
 
         return () => {
-            eventRefs.current.forEach((event) => {
+            currentEventRefs.forEach((event) => {
                 if (event) {
                     observer.unobserve(event);
                 }
@@ -70,9 +72,9 @@ const Timeline = () => {
                 </div>
             ))}
             <div className="line" />
-            <img src="logos\tLMark_White.svg" className="cap" />
+            <img src="logos\tLMark_White.svg" className="cap" draggable="false" />
             <p className="debut">The DSS Team will debut tinyLeague in 2025</p>
-        </div>
+        </div >
     );
 };
 

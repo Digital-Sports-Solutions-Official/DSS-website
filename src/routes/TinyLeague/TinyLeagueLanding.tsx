@@ -2,7 +2,7 @@
 
 import './TinyLeagueLanding.css'
 
-const TinyLeagueLanding = ({ }) => {
+const TinyLeagueLanding = () => {
     //TODO Include the tinyLeague mantra
 
     // TODO link to the new tinyLeague domain

@@ -25,13 +25,21 @@
             rgba(0, 0, 0, 0.8) 100%);
 }
 
-.NavBar a {
+.NavBar .anchors a {
     padding: 17px clamp(5px, 2vw, 15px);
     color: var(--dss-black);
     text-decoration: none;
     transition: color 0.3s;
     font-size: 1rem;
     font-weight: 600;
+}
+
+.NavBar .logo-anchor {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    height: 100%;
+    user-select: none;
 }
 
 /* Glow effect for the active page link */
@@ -45,7 +53,7 @@
     color: var(--dss-orange);
 }
 
-.NavBar .a-holder {
+.NavBar .anchors {
     margin: 0;
     flex-grow: 0;
 }

@@ -2,7 +2,7 @@
 
 import './Landing.css'
 
-const Landing = ({ }) => {
+const Landing = () => {
     return (
         <div className="Landing">
 

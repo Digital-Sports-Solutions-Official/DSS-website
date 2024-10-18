@@ -30,4 +30,3 @@ Built to be functional and reactive for devices with a screen-width of at least 
 - Just make the line one long thing and the middle section can be only the icon
 
 
-TODO make the funny logomark lines that Andrew is talking
