@@ -1,12 +1,16 @@
 /* General footer styles */
 .Footer {
-    /* background-color: var(--dss-orange); */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
     background: linear-gradient(to bottom, var(--dss-orange), var(--dss-red));
 
     color: white;
     padding: 40px 20px;
     width: 100%;
-    position: relative;
+
     box-sizing: border-box;
     margin-top: 4rem;
 }

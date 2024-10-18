@@ -1,8 +1,10 @@
 /* Noah Klein */
+
 import { FaInstagram, FaLinkedin, FaDiscord, FaFacebook } from "react-icons/fa";
 
 import './Footer.css';
 
+// TODO make footer stretch scroll
 
 const Footer = () => {
     return (
