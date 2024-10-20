@@ -23,7 +23,7 @@ const teamMembers: Array<Member> = [
         title: "CEO",
         href: "https://www.linkedin.com/in/andrew-flis-12b665159/",
         description: "Co-Founder and Chief Executive Officer of Digital Sports Solutions LLC. Andrew is a graduate of The Ohio State University with a Bachelors in Electrical and Computer Engineering. Responsible for the hardware and electrical design of the tinyLeague hardware suite, along with the company's marketing and public relations.",
-        picture: "team/Andrew.jpg",
+        picture: "team/Andrew1.jpg",
     },
     {
         name: "Michael Wilson",
