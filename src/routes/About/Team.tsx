@@ -16,21 +16,21 @@ const teamMembers: Array<Member> = [
         title: "CTO",
         href: "https://www.linkedin.com/in/adam-flis/",
         description: "Founder and Chief Technical Officer of Digital Sports Solutions LLC. Adam is set to graduate from The Ohio State University in May 2025 with a B.S. in Computer Science and Engineering and a minor in Entrepreneurship and Innovation. Adam is the lead software developer for the tinyLeague hardware modules and drives company innovation with new ideas.",
-        picture: "team/cute.jpg",
+        picture: "team/Adam.png",
     },
     {
         name: "Andrew Flis",
         title: "CEO",
         href: "https://www.linkedin.com/in/andrew-flis-12b665159/",
         description: "Co-Founder and Chief Executive Officer of Digital Sports Solutions LLC. Andrew is a graduate of The Ohio State University with a Bachelors in Electrical and Computer Engineering. Responsible for the hardware and electrical design of the tinyLeague hardware suite, along with the company's marketing and public relations.",
-        picture: "team/andrew.jpg",
+        picture: "team/Andrew.png",
     },
     {
         name: "Michael Wilson",
         title: "CIO",
         href: "https://www.linkedin.com/in/michael-wilson-0bb38b208/",
         description: "Chief Information Officer of Digital Sports Solutions LLC. Michael is a Ohio State University alumni, who graduated in Fall of 2023. A previous Artificial Intelligence Engineer, Michael leads the technical design process team at DSS",
-        picture: "team/mike.JPG",
+        picture: "team/Mike.png",
     },
 ]
 
