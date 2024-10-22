@@ -1,12 +1,14 @@
 /* Noah Klein */
 
-import { FaInstagram, FaLinkedin, FaDiscord, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaDiscord, FaFacebook, FaYoutube } from "react-icons/fa";
 
 import './Footer.css';
 
 // TODO make footer stretch scroll
 
 const Footer = () => {
+    const iconSize = '2rem';
+
     return (
         <footer className="Footer">
             <div className="footer-content">
@@ -20,10 +22,11 @@ const Footer = () => {
 
                 <div className="footer-section centered">
                     <h4>Connect</h4>
-                    <a href="https://www.instagram.com/digitalsportssolutions?igsh=MTc0YXltdXBmdjFqcw==" target='_blank'><FaInstagram size={'2rem'} /></a>
-                    <a href="https://www.linkedin.com/company/digitalsportssolutions/" target='_blank'> <FaLinkedin size={'2rem'} /></a>
-                    <a href="https://discord.gg/T2qfkr3JqT" target='_blank'> <FaDiscord size={'2rem'} /> </a>
-                    <a href="https://www.facebook.com/people/Digital-Sports-Solutions/61558423260160/" target='_blank'> <FaFacebook size={'2rem'} /> </a>
+                    <a href="https://www.youtube.com/channel/UCj6qESOEGemvzRvgxagYHWg" target='_blank'> <FaYoutube size={iconSize} /> </a>
+                    <a href="https://www.instagram.com/digitalsportssolutions?igsh=MTc0YXltdXBmdjFqcw==" target='_blank'><FaInstagram size={iconSize} /></a>
+                    <a href="https://www.linkedin.com/company/digitalsportssolutions/" target='_blank'> <FaLinkedin size={iconSize} /></a>
+                    <a href="https://discord.gg/T2qfkr3JqT" target='_blank'> <FaDiscord size={iconSize} /> </a>
+                    <a href="https://www.facebook.com/people/Digital-Sports-Solutions/61558423260160/" target='_blank'> <FaFacebook size={iconSize} /> </a>
                 </div>
 
                 <div className="footer-section right">
