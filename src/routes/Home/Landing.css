@@ -82,10 +82,11 @@
 }
 
 .Landing img {
-    max-height: 18rem;
+    max-height: 20rem;
     width: 100%;
     object-fit: contain;
-    background-color: var(--dss-gray);
+    background-color: #0d0d0d;
+    /* background-color: #1d1d1d; */
 }
 
 .Landing p {
@@ -105,7 +106,7 @@
         padding: 0 2rem;
     }
 
-    .Landing .slogan-holder{
+    .Landing .slogan-holder {
         line-height: clamp(3rem, 16.5vw, 9rem);
         font-size: clamp(3rem, 16.5vw, 8rem);
     }

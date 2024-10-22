@@ -14,7 +14,8 @@ const Landing = () => {
             </div>
             {/* TODO Change this image */}
             <div className="column image-paragraph">
-                <img src='https://computercare.net/wp-content/uploads/2019/08/Blog-Post-Header.png' />
+                <img src='renders/DSStowers.59.jpg' />
+                {/* <img src='renders/untitled.57.jpg' /> */}
                 <p>
                     Digital Sports Solutions is revolutionizing recreational sports leagues with its integrated suite of hardware,
                     user-friendly software, and adaptable database system.
