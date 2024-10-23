@@ -29,18 +29,28 @@
     /* Allows wrapping if necessary */
 }
 
+.TinyLeagueLanding span {
+    display: inline-flex;
+    align-items: center;
+}
 
-.TinyLeagueLanding img {
-    width: 10rem;
+.TinyLeagueLanding h1 img {
+    height: 4rem;
+    transform: translateX(-0.75rem);
+}
+
+
+.TinyLeagueLanding .container img {
+    width: 20rem;
     user-select: none;
 }
 
 @media (max-width: 768px) {
-    .TinyLeagueLanding .container{
+    .TinyLeagueLanding .container {
         flex-direction: column;
     }
 
-    .TinyLeagueLanding img{
+    .TinyLeagueLanding img {
         margin-top: 1rem;
     }
 }

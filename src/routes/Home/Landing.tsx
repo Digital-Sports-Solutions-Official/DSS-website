@@ -10,7 +10,7 @@ const Landing = () => {
                 <div>Hardware</div>
                 <div>Software</div>
                 <div>Sports</div>
-                <p>Digital Sports Solutions LLC.</p>
+                <p>Digital Sports Solutions LLC</p>
             </div>
             {/* TODO Change this image */}
             <div className="column image-paragraph">

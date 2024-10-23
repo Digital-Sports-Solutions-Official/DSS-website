@@ -9,10 +9,10 @@ const TinyLeagueLanding = () => {
     // TODO find the oomph
     return (
         <div className="TinyLeagueLanding">
-            <h1>Introducing tinyLeague</h1>
+            {/* TODO Make this work */}
+            <h1><span>Introducing tinyLeague<img src='logos/DSS_LogoMark_FullColor.svg' draggable='false' /></span></h1>
             <div className="container">
-
-                <img src='logos/tLMark_White.svg' draggable='false' />
+                <img src='renders/DSStowers.58.png' draggable='false' />
 
                 <p>
                     tinyLeague™ is the flagship product line from Digital Sports Solutions changing the way sport leagues operate from their core.
