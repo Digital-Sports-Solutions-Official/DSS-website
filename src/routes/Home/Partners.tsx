@@ -13,7 +13,7 @@ const partners: Array<MediaTextEntry> = [
         descriptionElement:
             <>
                 <p>The <a href='https://www.ndadodgeball.com/' target='_blank'>National Dodgeball Association (NDA)</a> is a leading organization dedicated to promoting and governing the sport of dodgeball across the United States. Established with the goal of advancing dodgeball as a recognized and respected sport, the NDA organizes competitive leagues, tournaments, and events for players of all skill levels.</p>
-                <p>The NDA provides a structured environment for both recreational and professional players, ensuring consistent rules and fair play.It fosters a sense of community among dodgeball enthusiasts and emphasizes sportsmanship, teamwork, and physical fitness.Through its efforts, the NDA aims to grow the sport's popularity, create opportunities for player development, and establish dodgeball as a mainstream athletic pursuit.</p>
+                <p>The NDA provides a structured environment for both recreational and professional players, ensuring consistent rules and fair play. It fosters a sense of community among dodgeball enthusiasts and emphasizes sportsmanship, teamwork, and physical fitness. Through its efforts, the NDA aims to grow the sport's popularity, create opportunities for player development, and establish dodgeball as a mainstream athletic pursuit.</p>
                 <p>With a focus on expanding dodgeball's reach and impact, the NDA continues to enhance the sport's visibility and engage with a broad audience, from grassroots players to elite competitors.</p>
             </>
     },
@@ -30,7 +30,7 @@ const partners: Array<MediaTextEntry> = [
     },
 ]
 
-const Partners = ({ }) => {
+const Partners = () => {
     return (
         <div className="Partners">
             <h1>Proudly Partnered</h1>

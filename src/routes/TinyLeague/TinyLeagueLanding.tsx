@@ -3,13 +3,8 @@
 import './TinyLeagueLanding.css'
 
 const TinyLeagueLanding = () => {
-    //TODO Include the tinyLeague mantra
-
-    // TODO link to the new tinyLeague domain
-    // TODO find the oomph
     return (
         <div className="TinyLeagueLanding">
-            {/* TODO Make this work */}
             <h1><span>Introducing tinyLeague<img src='logos/DSS_LogoMark_FullColor.svg' draggable='false' /></span></h1>
             <div className="container">
                 <img src='renders/DSStowers.58.png' draggable='false' />

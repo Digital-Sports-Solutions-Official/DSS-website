@@ -26,7 +26,7 @@ const NavBar = () => {
                         </a>
                     ))}
                 </div>
-                {/* TODO Make this a link to home */}
+
                 <a className='logo-anchor' href='/'>
                     <img src='logos/DSS_CombinationMark_FullColor.svg' alt="DSS Logo" draggable='false' />
                 </a>
