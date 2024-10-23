@@ -50,7 +50,7 @@ const router = createBrowserRouter([
   },
   {
     path: "iphone20",
-    element: <img src="iphone20.png" />,
+    element: <img src="iphone20.png" style={{ width: '100%', height: '100%' }} />,
   },
 ]);
 
