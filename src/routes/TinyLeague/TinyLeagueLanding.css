@@ -34,10 +34,11 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .TinyLeagueLanding h1 img {
-    max-height: 6rem;
+    height: 6rem;
     filter: brightness(0) saturate(100%) invert(44%) sepia(92%) saturate(3685%) hue-rotate(1deg) brightness(103%) contrast(104%);
 }
 
@@ -54,5 +55,9 @@
 
     .TinyLeagueLanding .container img {
         margin-top: 1rem;
+    }
+
+    .TinyLeagueLanding h1 img {
+        max-height: 5rem;
     }
 }

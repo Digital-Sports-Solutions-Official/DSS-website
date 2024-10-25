@@ -2,14 +2,18 @@
 
 /* ! This should usually be in line with Partners.css */
 
+.Ecosystem {
+    margin-bottom: 5rem;
+}
+
 .Ecosystem .entry {
     box-shadow: none;
 }
 
-.Ecosystem .AlternatingMediaText{
+.Ecosystem .AlternatingMediaText {
     padding: 0 2rem;
 }
 
-.Ecosystem .AlternatingMediaText .entry{
+.Ecosystem .AlternatingMediaText .entry {
     max-width: 80rem;
 }

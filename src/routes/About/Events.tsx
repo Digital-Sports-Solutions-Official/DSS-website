@@ -10,8 +10,6 @@ interface Event {
     embed?: JSX.Element;
 }
 
-// TODO update timeline events
-
 export const events: Array<Event> = [
     {
         date: 'Oct. 2022',
