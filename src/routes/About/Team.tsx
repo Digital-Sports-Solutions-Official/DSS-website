@@ -29,7 +29,7 @@ const teamMembers: Array<Member> = [
         name: "Michael Wilson",
         title: "CIO",
         href: "https://www.linkedin.com/in/michael-wilson-0bb38b208/",
-        description: "Chief Information Officer of Digital Sports Solutions LLC. Michael serves as the CIO, playing a pivotal role in driving innovation and leading the company's technological strategy. He is a Ohio State University Alumni, As a seasoned expert with a background in artificial intelligence engineering, Michael brings deep technical expertise and a forward-thinking approach to his leadership at DSS.",
+        description: "Chief Information Officer of Digital Sports Solutions LLC. Michael serves as the CIO, playing a pivotal role in driving innovation and leading the company's technological strategy. He is a Ohio State University Alumni. As a seasoned expert with a background in artificial intelligence engineering, Michael brings deep technical expertise and a forward-thinking approach to his leadership at DSS.",
         picture: "team/Michael.jpg",
     },
 ]

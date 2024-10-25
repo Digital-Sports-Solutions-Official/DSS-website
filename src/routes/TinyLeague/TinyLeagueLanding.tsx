@@ -5,6 +5,7 @@ import './TinyLeagueLanding.css'
 const TinyLeagueLanding = () => {
     return (
         <div className="TinyLeagueLanding">
+            {/* TODO this could be better on mobile */}
             <h1>Introducing <img src='logos/tinyLeague_CombinationMark_Black.svg' draggable='false' /></h1>
             <div className="container">
                 <img src='renders/DSStowers.58.png' draggable='false' />

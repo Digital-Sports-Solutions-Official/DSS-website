@@ -12,7 +12,6 @@ const Landing = () => {
                 <div>Sports</div>
                 <p>Digital Sports Solutions LLC</p>
             </div>
-            {/* TODO Change this image */}
             <div className="column image-paragraph">
                 <img src='renders/DSStowers.59.jpg' />
                 <p>
