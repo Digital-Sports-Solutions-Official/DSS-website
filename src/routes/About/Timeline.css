@@ -60,10 +60,6 @@
     filter: drop-shadow(0 0 0.75rem var(--dss-red));
 }
 
-.Timeline .event img {
-    max-width: 50%;
-}
-
 /* Date */
 
 .Timeline .date-box {

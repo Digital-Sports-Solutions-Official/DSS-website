@@ -33,7 +33,7 @@ export const events: Array<Event> = [
         date: 'May 2023',
         title: 'DSS Founded',
         description: 'Digital Sports Solutions LLC is founded in the state of Ohio.',
-        embed: <img src="logos/Old_DSS_logo.png" />
+        embed: <img src="logos/Old_DSS_logo.png" style={{ maxWidth: '50%' }} />
     },
     {
         date: 'June - November 2023',
@@ -44,6 +44,7 @@ export const events: Array<Event> = [
         date: 'December 2023',
         title: 'Web App',
         description: 'At the beginning of the development phase, Michael joined the team to spearhead the creation of a web application and user-friendly interface. His goal was to transform DSS\'s existing hardware-based systems into a streamlined digital solution. By leveraging modern web technologies, Michael focused on enhancing the accessibility and functionality of the platform, ensuring that users could efficiently manage sports data and league operations online. The project evolved from a basic hardware solution into a comprehensive digital tool, designed to handle everything from team management and scheduling to real- time game statistics and performance analytics. The transition to this innovative approach not only improved the ease of use for clients but also positioned DSS as a leader in sports data management, offering a platform that integrates seamlessly with their hardware while expanding its capabilities.',
+        embed: <img src="webapp-prototype.png" style={{ maxWidth: '100%' }} />
     },
     {
         date: 'April 2024',
@@ -53,6 +54,10 @@ export const events: Array<Event> = [
             <div className="embed-container-insta">
                 <InstagramEmbed url="https://www.instagram.com/p/C5qUbMcgfZ2/" />
             </div>,
-
+    },
+    {
+        date: 'October 2024',
+        title: 'Website Launch',
+        description: 'DSS launches its public-facing website to showcase products and services.',
     },
 ];
